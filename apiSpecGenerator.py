@@ -244,6 +244,10 @@ file_list = ['common-api.json',
 global fileToErrorDic
 fileToErrorDic = {}
 
+# dir = './apiSpecGeneratorResult'
+# for f in os.listdir(dir):
+#     os.remove(os.path.join(dir, f))
+
 for file_name in file_list:
     fileToErrorDic[file_name] = {
         'apiSubCnt': 0,
