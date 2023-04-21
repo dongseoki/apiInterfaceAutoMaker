@@ -18,31 +18,48 @@ def parseSchemaPath(refValue):
     return refValue.split('/')[3]
 
 
-def printRequestParameter(uri, apiMN, apiDatas):
+def printRequestParameter(uri, apiMN, apiDatas, schValDic):
     print()
     print('request parameter print begin : {} {}'.format(uri, apiMN))
-    for paramItem in apiDatas[uri][apiMN]['parameters']:
-        try:
-            element = paramItem['name']
-            dataType = paramItem['schema']['type']
-            if paramItem['required'] == True:
-                mandatory = 'O'
-            else:
-                mandatory = 'X'
-            if 'description' in paramItem:
-                desc = paramItem['description']
-            else:
-                desc = ''
-            print(' - {}\t{}\t{}\t{}'.format(element, dataType, mandatory, desc))
-        except:
-            print('error occured name : {}, value : {}'.format(
-                paramItem['name'], paramItem))
+    if 'parameters' in apiDatas[uri][apiMN]:
+        for paramItem in apiDatas[uri][apiMN]['parameters']:
+            try:
+                element = paramItem['name']
+                dataType = paramItem['schema']['type']
+                if paramItem['required'] == True:
+                    mandatory = 'O'
+                else:
+                    mandatory = 'X'
+                if 'description' in paramItem:
+                    desc = paramItem['description']
+                else:
+                    desc = ''
+                print(' - {}\t{}\t{}\t{}'.format(element, dataType, mandatory, desc))
+            except:
+                print('error occured name : {}, value : {}'.format(
+                    paramItem['name'], paramItem))
+    if 'requestBody' in apiDatas[uri][apiMN]:
+        if 'application/json' in apiDatas[uri][apiMN]['requestBody']['content']:
+            schemaRealValDit = apiDatas[uri][apiMN]['requestBody']['content']['application/json']['schema']
+        if 'multipart/form-data' in apiDatas[uri][apiMN]['requestBody']['content']:
+            schemaRealValDit = apiDatas[uri][apiMN]['requestBody']['content']['multipart/form-data']['schema']
+        if 'items' in schemaRealValDit:
+            if '$ref' in schemaRealValDit['items']:
+                printResponseByDepth({
+                    '$ref': schemaRealValDit['items']['$ref']
+                }, schValDic)
+        if '$ref' in schemaRealValDit:
+            printResponseByDepth({
+                '$ref': schemaRealValDit['$ref']
+            }, schValDic)
     print('request parameter print end : {} {}'.format(uri, apiMN))
     print()
 
 
 # schValDic
 def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
+    if depth >= 7:
+        return
     # schValDic
     # ex)
     #     {'ErrorResponse': {'type': 'object',
@@ -70,6 +87,8 @@ def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
     #     'nullable': True,
     #     'example': 'BLC004'},
     #    'imgPath': {'type': 'string',
+    if '$ref' not in refKeyOnlyDict:
+        return
     refValue = refKeyOnlyDict['$ref']  # '#/components/schemas/ErrorResponse'
     schName = parseSchemaPath(refValue)
     schVal = schValDic[schName]
@@ -171,7 +190,8 @@ def printApiSpec(relPath, fileName):
                 # Change the standard output to the file we created.
                 sys.stdout = f
                 try:
-                    printRequestParameter(key, apiMN, apiDatas)
+                    printRequestParameter(
+                        key, apiMN, apiDatas, data['components']['schemas'])
                 except:
                     print('api spec request error occured', apiName, key)
                     print(traceback.format_exc())
@@ -187,10 +207,11 @@ def printApiSpec(relPath, fileName):
                         if statusCode not in ['401', '404', '400', '500']:
                             print('uri: {}, method: {}, stCode: {}, respone REsult begin'.format(
                                 key, apiMN, statusCode))
-                            printResponseByDepth(apiDatas[key][apiMN]['responses'][statusCode]['content']['application/json']['schema'],
-                                                 data['components']['schemas'])
-                            print('uri: {}, method: {}, stCode: {}, respone REsult END'.format(
-                                key, apiMN, statusCode))
+                            if 'content' in apiDatas[key][apiMN]['responses'][statusCode]:
+                                printResponseByDepth(apiDatas[key][apiMN]['responses'][statusCode]['content']['application/json']['schema'],
+                                                     data['components']['schemas'])
+                                print('uri: {}, method: {}, stCode: {}, respone REsult END'.format(
+                                    key, apiMN, statusCode))
 
                     print('api spec end')
                 except:

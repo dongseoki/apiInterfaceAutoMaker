@@ -1,308 +1,308 @@
 file_name:  common-api.json
 apiSubCnt:  138
-errReqCnt:  84
-errReqPercent:  60.86956521739131
-errResCnt:  137
-errResPercent:  99.27536231884058
-errReqList:  ['./apiSpecGeneratorResult/AP_003__admin_auth_list_post', './apiSpecGeneratorResult/AP_006__admin_menu_createMenu_put', './apiSpecGeneratorResult/AP_010__admin_menu_updateMenu_put', './apiSpecGeneratorResult/AP_011__admin_site_create_post', './apiSpecGeneratorResult/AP_015__admin_site_log_emailHistory_post', './apiSpecGeneratorResult/AP_016__admin_site_log_emailHistory_{emailhistNo}_post', './apiSpecGeneratorResult/AP_017__admin_site_log_errorLog_post', './apiSpecGeneratorResult/AP_018__admin_site_log_movieLog_post', './apiSpecGeneratorResult/AP_019__admin_site_log_movieTimeLog_post', './apiSpecGeneratorResult/AP_020__admin_site_log_siteLog_post', './apiSpecGeneratorResult/AP_021__admin_site_projectlist_post', './apiSpecGeneratorResult/AP_022__admin_site_update_put', './apiSpecGeneratorResult/AP_023__admin_user_authMenuList_post', './apiSpecGeneratorResult/AP_024__admin_user_deleteAdminUser_put', './apiSpecGeneratorResult/AP_025__admin_user_detail_post', './apiSpecGeneratorResult/AP_026__admin_user_excel_post', './apiSpecGeneratorResult/AP_028__admin_user_favMenuList_post', './apiSpecGeneratorResult/AP_030__admin_user_update-approve-cd_patch', './apiSpecGeneratorResult/AP_031__admin_user_updateUserGrpCd_put', './apiSpecGeneratorResult/AP_036__code_detail_grouped-category_post', './apiSpecGeneratorResult/AP_041__code_detail_order_post', './apiSpecGeneratorResult/AP_049__code_master_order_post', './apiSpecGeneratorResult/AP_056__csv_download_post', './apiSpecGeneratorResult/AP_058__file_del_post', './apiSpecGeneratorResult/AP_063__file_imageLink_post', './apiSpecGeneratorResult/AP_064__file_list_post', './apiSpecGeneratorResult/AP_065__file_upload_post', './apiSpecGeneratorResult/AP_066__file_upload-image_post', './apiSpecGeneratorResult/AP_069__menu_*_put', './apiSpecGeneratorResult/AP_070__menu_*_post', './apiSpecGeneratorResult/AP_071__menu_list_post', './apiSpecGeneratorResult/AP_075__movielog_add-movie-national-code_post', './apiSpecGeneratorResult/AP_076__movielog_add-movietime-national-code_post', './apiSpecGeneratorResult/AP_077__project_put', './apiSpecGeneratorResult/AP_078__project_post', './apiSpecGeneratorResult/AP_080__project_del_patch', './apiSpecGeneratorResult/AP_081__project_list_post', './apiSpecGeneratorResult/AP_083__project_site_post', './apiSpecGeneratorResult/AP_084__project_site_patch', './apiSpecGeneratorResult/AP_087__redis_cacheable_get', './apiSpecGeneratorResult/AP_088__redis_get_get', './apiSpecGeneratorResult/AP_089__redis_put_get', './apiSpecGeneratorResult/AP_090__role_list_post', './apiSpecGeneratorResult/AP_091__site_log_addMovieLog_post', './apiSpecGeneratorResult/AP_092__site_log_addMovieTimeLog_post', './apiSpecGeneratorResult/AP_093__site_log_create_put', './apiSpecGeneratorResult/AP_095__site_log_total-log_post', './apiSpecGeneratorResult/AP_096__stat_by-access-dt-movielog_post', './apiSpecGeneratorResult/AP_097__stat_by-access-dt-movietimelog_post', './apiSpecGeneratorResult/AP_098__stat_kite_by-any_daily-access_post', './apiSpecGeneratorResult/AP_099__stat_kite_by-any_time-access_post', './apiSpecGeneratorResult/AP_100__stat_kite_by-browser_post', './apiSpecGeneratorResult/AP_101__stat_kite_by-device_post', './apiSpecGeneratorResult/AP_102__stat_kite_by-gender_post', './apiSpecGeneratorResult/AP_103__stat_kite_by-main_daily-access_post', './apiSpecGeneratorResult/AP_104__stat_kite_by-main_time-access_post', './apiSpecGeneratorResult/AP_105__stat_kite_by-nation_post', './apiSpecGeneratorResult/AP_106__stat_kite_by-org_post', './apiSpecGeneratorResult/AP_107__stat_kite_by-os_post', './apiSpecGeneratorResult/AP_108__stat_kite_by-user_post', './apiSpecGeneratorResult/AP_109__stat_kite_daily-by-usergbn_post', './apiSpecGeneratorResult/AP_110__stat_kite_time-by-usergbn_post', './apiSpecGeneratorResult/AP_111__stat_page-by-user_post', './apiSpecGeneratorResult/AP_112__stat_user-by-age_post', './apiSpecGeneratorResult/AP_113__stat_user-by-browser_post', './apiSpecGeneratorResult/AP_114__stat_user-by-date_post', './apiSpecGeneratorResult/AP_115__stat_user-by-gender_post', './apiSpecGeneratorResult/AP_116__stat_user-by-moviecount_post', './apiSpecGeneratorResult/AP_117__stat_user-by-movielist_post', './apiSpecGeneratorResult/AP_118__stat_user-by-nation_post', './apiSpecGeneratorResult/AP_119__stat_user-by-os_post', './apiSpecGeneratorResult/AP_120__stat_user-by-url_post', './apiSpecGeneratorResult/AP_122__user_list_post', './apiSpecGeneratorResult/AP_123__user_set-detail-sub_post', './apiSpecGeneratorResult/AP_125__user_update_put', './apiSpecGeneratorResult/AP_126__user_update_post', './apiSpecGeneratorResult/AP_128__user_updateSub_post', './apiSpecGeneratorResult/AP_129__user_updateUser_put', './apiSpecGeneratorResult/AP_132__userlog_post', './apiSpecGeneratorResult/AP_133__userlog_patch', './apiSpecGeneratorResult/AP_134__userlog_{userLogNo}_delete', './apiSpecGeneratorResult/AP_136__userrole_post', './apiSpecGeneratorResult/AP_137__userrole_patch', './apiSpecGeneratorResult/AP_138__userrole_{userRoleNo}_delete']
-errResList:  ['./apiSpecGeneratorResult/AP_001__admin_auth_detail_{id}_post', './apiSpecGeneratorResult/AP_002__admin_auth_detailGrp_{id}_post', './apiSpecGeneratorResult/AP_003__admin_auth_list_post', './apiSpecGeneratorResult/AP_004__admin_auth_list_grpAuthMbrList_post', './apiSpecGeneratorResult/AP_005__admin_auth_updateAuth_{id}_post', './apiSpecGeneratorResult/AP_006__admin_menu_createMenu_put', './apiSpecGeneratorResult/AP_007__admin_menu_deleteMenu_{id}_delete', './apiSpecGeneratorResult/AP_008__admin_menu_list_post', './apiSpecGeneratorResult/AP_009__admin_menu_list_{id}_post', './apiSpecGeneratorResult/AP_010__admin_menu_updateMenu_put', './apiSpecGeneratorResult/AP_011__admin_site_create_post', './apiSpecGeneratorResult/AP_012__admin_site_delete_{id}_delete', './apiSpecGeneratorResult/AP_013__admin_site_list_post', './apiSpecGeneratorResult/AP_014__admin_site_list_{id}_post', './apiSpecGeneratorResult/AP_015__admin_site_log_emailHistory_post', './apiSpecGeneratorResult/AP_016__admin_site_log_emailHistory_{emailhistNo}_post', './apiSpecGeneratorResult/AP_017__admin_site_log_errorLog_post', './apiSpecGeneratorResult/AP_018__admin_site_log_movieLog_post', './apiSpecGeneratorResult/AP_019__admin_site_log_movieTimeLog_post', './apiSpecGeneratorResult/AP_020__admin_site_log_siteLog_post', './apiSpecGeneratorResult/AP_021__admin_site_projectlist_post', './apiSpecGeneratorResult/AP_022__admin_site_update_put', './apiSpecGeneratorResult/AP_023__admin_user_authMenuList_post', './apiSpecGeneratorResult/AP_024__admin_user_deleteAdminUser_put', './apiSpecGeneratorResult/AP_025__admin_user_detail_post', './apiSpecGeneratorResult/AP_026__admin_user_excel_post', './apiSpecGeneratorResult/AP_027__admin_user_favMenu_{id}_post', './apiSpecGeneratorResult/AP_028__admin_user_favMenuList_post', './apiSpecGeneratorResult/AP_029__admin_user_list_post', './apiSpecGeneratorResult/AP_030__admin_user_update-approve-cd_patch', './apiSpecGeneratorResult/AP_031__admin_user_updateUserGrpCd_put', './apiSpecGeneratorResult/AP_032__code_detail_put', './apiSpecGeneratorResult/AP_033__code_detail_post', './apiSpecGeneratorResult/AP_034__code_detail_add_post', './apiSpecGeneratorResult/AP_035__code_detail_checkCode_post', './apiSpecGeneratorResult/AP_036__code_detail_grouped-category_post', './apiSpecGeneratorResult/AP_037__code_detail_list_post', './apiSpecGeneratorResult/AP_038__code_detail_mstCacheDelete_get', './apiSpecGeneratorResult/AP_039__code_detail_mstList_post', './apiSpecGeneratorResult/AP_040__code_detail_multi-list_post', './apiSpecGeneratorResult/AP_041__code_detail_order_post', './apiSpecGeneratorResult/AP_042__code_detail_remove_post', './apiSpecGeneratorResult/AP_043__code_detail_removeFlag_post', './apiSpecGeneratorResult/AP_044__code_master_*_put', './apiSpecGeneratorResult/AP_045__code_master_*_post', './apiSpecGeneratorResult/AP_046__code_master_List_post', './apiSpecGeneratorResult/AP_047__code_master_add_post', './apiSpecGeneratorResult/AP_048__code_master_checkCode_post', './apiSpecGeneratorResult/AP_049__code_master_order_post', './apiSpecGeneratorResult/AP_050__code_master_remove_post', './apiSpecGeneratorResult/AP_051__code_master_removeFlag_post', './apiSpecGeneratorResult/AP_052__codes_detail_post', './apiSpecGeneratorResult/AP_053__codes_master_get', './apiSpecGeneratorResult/AP_054__common_addLike_put', './apiSpecGeneratorResult/AP_055__common_getLike_post', './apiSpecGeneratorResult/AP_056__csv_download_post', './apiSpecGeneratorResult/AP_057__file_get', './apiSpecGeneratorResult/AP_058__file_del_post', './apiSpecGeneratorResult/AP_059__file_del_{attachNo}_delete', './apiSpecGeneratorResult/AP_060__file_delGroup_{attachGrpCd}_delete', './apiSpecGeneratorResult/AP_061__file_download_{attachNo}_get', './apiSpecGeneratorResult/AP_062__file_group_{attachGrpCd}_get', './apiSpecGeneratorResult/AP_063__file_imageLink_post', './apiSpecGeneratorResult/AP_064__file_list_post', './apiSpecGeneratorResult/AP_065__file_upload_post', './apiSpecGeneratorResult/AP_066__file_upload-image_post', './apiSpecGeneratorResult/AP_067__file_{attachNo}_get', './apiSpecGeneratorResult/AP_068__menu_*_get', './apiSpecGeneratorResult/AP_069__menu_*_put', './apiSpecGeneratorResult/AP_070__menu_*_post', './apiSpecGeneratorResult/AP_071__menu_list_post', './apiSpecGeneratorResult/AP_072__menu_{menuId}_get', './apiSpecGeneratorResult/AP_073__menu_{menuId}_delete', './apiSpecGeneratorResult/AP_074__menu_{menuId}_patch', './apiSpecGeneratorResult/AP_075__movielog_add-movie-national-code_post', './apiSpecGeneratorResult/AP_076__movielog_add-movietime-national-code_post', './apiSpecGeneratorResult/AP_077__project_put', './apiSpecGeneratorResult/AP_078__project_post', './apiSpecGeneratorResult/AP_079__project_check_{projectCd}_get', './apiSpecGeneratorResult/AP_080__project_del_patch', './apiSpecGeneratorResult/AP_081__project_list_post', './apiSpecGeneratorResult/AP_082__project_list_{projectCd}_get', './apiSpecGeneratorResult/AP_083__project_site_post', './apiSpecGeneratorResult/AP_084__project_site_patch', './apiSpecGeneratorResult/AP_085__project_{projectCd}_get', './apiSpecGeneratorResult/AP_086__project_{projectCd}_{siteId}_get', './apiSpecGeneratorResult/AP_088__redis_get_get', './apiSpecGeneratorResult/AP_089__redis_put_get', './apiSpecGeneratorResult/AP_090__role_list_post', './apiSpecGeneratorResult/AP_091__site_log_addMovieLog_post', './apiSpecGeneratorResult/AP_092__site_log_addMovieTimeLog_post', './apiSpecGeneratorResult/AP_093__site_log_create_put', './apiSpecGeneratorResult/AP_094__site_log_ip-addr_get', './apiSpecGeneratorResult/AP_095__site_log_total-log_post', './apiSpecGeneratorResult/AP_096__stat_by-access-dt-movielog_post', './apiSpecGeneratorResult/AP_097__stat_by-access-dt-movietimelog_post', './apiSpecGeneratorResult/AP_098__stat_kite_by-any_daily-access_post', './apiSpecGeneratorResult/AP_099__stat_kite_by-any_time-access_post', './apiSpecGeneratorResult/AP_100__stat_kite_by-browser_post', './apiSpecGeneratorResult/AP_101__stat_kite_by-device_post', './apiSpecGeneratorResult/AP_102__stat_kite_by-gender_post', './apiSpecGeneratorResult/AP_103__stat_kite_by-main_daily-access_post', './apiSpecGeneratorResult/AP_104__stat_kite_by-main_time-access_post', './apiSpecGeneratorResult/AP_105__stat_kite_by-nation_post', './apiSpecGeneratorResult/AP_106__stat_kite_by-org_post', './apiSpecGeneratorResult/AP_107__stat_kite_by-os_post', './apiSpecGeneratorResult/AP_108__stat_kite_by-user_post', './apiSpecGeneratorResult/AP_109__stat_kite_daily-by-usergbn_post', './apiSpecGeneratorResult/AP_110__stat_kite_time-by-usergbn_post', './apiSpecGeneratorResult/AP_111__stat_page-by-user_post', './apiSpecGeneratorResult/AP_112__stat_user-by-age_post', './apiSpecGeneratorResult/AP_113__stat_user-by-browser_post', './apiSpecGeneratorResult/AP_114__stat_user-by-date_post', './apiSpecGeneratorResult/AP_115__stat_user-by-gender_post', './apiSpecGeneratorResult/AP_116__stat_user-by-moviecount_post', './apiSpecGeneratorResult/AP_117__stat_user-by-movielist_post', './apiSpecGeneratorResult/AP_118__stat_user-by-nation_post', './apiSpecGeneratorResult/AP_119__stat_user-by-os_post', './apiSpecGeneratorResult/AP_120__stat_user-by-url_post', './apiSpecGeneratorResult/AP_121__user_changePw_put', './apiSpecGeneratorResult/AP_122__user_list_post', './apiSpecGeneratorResult/AP_123__user_set-detail-sub_post', './apiSpecGeneratorResult/AP_124__user_subList_post', './apiSpecGeneratorResult/AP_125__user_update_put', './apiSpecGeneratorResult/AP_126__user_update_post', './apiSpecGeneratorResult/AP_127__user_updatePreregister_put', './apiSpecGeneratorResult/AP_128__user_updateSub_post', './apiSpecGeneratorResult/AP_129__user_updateUser_put', './apiSpecGeneratorResult/AP_130__user_{userNo}_post', './apiSpecGeneratorResult/AP_131__userlog_get', './apiSpecGeneratorResult/AP_132__userlog_post', './apiSpecGeneratorResult/AP_133__userlog_patch', './apiSpecGeneratorResult/AP_134__userlog_{userLogNo}_delete', './apiSpecGeneratorResult/AP_135__userrole_get', './apiSpecGeneratorResult/AP_136__userrole_post', './apiSpecGeneratorResult/AP_137__userrole_patch', './apiSpecGeneratorResult/AP_138__userrole_{userRoleNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  banner-api.json
 apiSubCnt:  20
-errReqCnt:  4
-errReqPercent:  20.0
-errResCnt:  4
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_141__banner_increase-dsp-cnt_patch', './apiSpecGeneratorResult/AP_145__tb_banner_post', './apiSpecGeneratorResult/AP_147__tb_banner_detail_post', './apiSpecGeneratorResult/AP_149__tb_banner_detail-sub_post']
-errResList:  ['./apiSpecGeneratorResult/AP_141__banner_increase-dsp-cnt_patch', './apiSpecGeneratorResult/AP_151__tb_banner_detail-sub_{bannerDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_154__tb_banner_detail_{bannerNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_157__tb_banner_{bannerNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  board-api.json
 apiSubCnt:  54
-errReqCnt:  19
-errReqPercent:  35.18518518518518
-errResCnt:  35
-errResPercent:  64.81481481481481
-errReqList:  ['./apiSpecGeneratorResult/AP_160__admin_board_post', './apiSpecGeneratorResult/AP_161__admin_board_patch', './apiSpecGeneratorResult/AP_165__admin_post_comment_post', './apiSpecGeneratorResult/AP_167__admin_post_comment_{commentNo}_patch', './apiSpecGeneratorResult/AP_172__admin_post_{postNo}_patch', './apiSpecGeneratorResult/AP_175__ceph_sample_bucket_get', './apiSpecGeneratorResult/AP_183__popup_post', './apiSpecGeneratorResult/AP_184__popup_patch', './apiSpecGeneratorResult/AP_185__popup_activeList_post', './apiSpecGeneratorResult/AP_186__popup_list_post', './apiSpecGeneratorResult/AP_190__post_post', './apiSpecGeneratorResult/AP_191__post_delete', './apiSpecGeneratorResult/AP_192__post_patch', './apiSpecGeneratorResult/AP_193__post_comment_post', './apiSpecGeneratorResult/AP_198__post_consulting_post', './apiSpecGeneratorResult/AP_205__redis_sample_cacheable_get', './apiSpecGeneratorResult/AP_208__subscribe_post', './apiSpecGeneratorResult/AP_209__subscribe_list_post', './apiSpecGeneratorResult/AP_212__version_get']
-errResList:  ['./apiSpecGeneratorResult/AP_161__admin_board_patch', './apiSpecGeneratorResult/AP_163__admin_board_{boardNo}_delete', './apiSpecGeneratorResult/AP_166__admin_post_comment_{commentNo}_delete', './apiSpecGeneratorResult/AP_167__admin_post_comment_{commentNo}_patch', './apiSpecGeneratorResult/AP_169__admin_post_excel_get', './apiSpecGeneratorResult/AP_171__admin_post_{postNo}_delete', './apiSpecGeneratorResult/AP_172__admin_post_{postNo}_patch', './apiSpecGeneratorResult/AP_175__ceph_sample_bucket_get', './apiSpecGeneratorResult/AP_176__ceph_sample_bucket_{bucket}_post', './apiSpecGeneratorResult/AP_177__ceph_sample_bucket_{bucket}_delete', './apiSpecGeneratorResult/AP_178__ceph_sample_dummy-file_{file}_post', './apiSpecGeneratorResult/AP_179__ceph_sample_object_{bucket}_get', './apiSpecGeneratorResult/AP_180__ceph_sample_object_{bucket}_{key}_delete', './apiSpecGeneratorResult/AP_181__ceph_sample_object_{bucket}_{key}_{file}_get', './apiSpecGeneratorResult/AP_182__ceph_sample_object_{bucket}_{key}_{file}_post', './apiSpecGeneratorResult/AP_183__popup_post', './apiSpecGeneratorResult/AP_184__popup_patch', './apiSpecGeneratorResult/AP_185__popup_activeList_post', './apiSpecGeneratorResult/AP_186__popup_list_post', './apiSpecGeneratorResult/AP_187__popup_{popupNo}_get', './apiSpecGeneratorResult/AP_188__popup_{popupNo}_delete', './apiSpecGeneratorResult/AP_191__post_delete', './apiSpecGeneratorResult/AP_192__post_patch', './apiSpecGeneratorResult/AP_195__post_comment_{commentNo}_delete', './apiSpecGeneratorResult/AP_196__post_comment_{commentNo}_patch', './apiSpecGeneratorResult/AP_198__post_consulting_post', './apiSpecGeneratorResult/AP_200__post_notice_{boardNo}_get', './apiSpecGeneratorResult/AP_202__post_{postNo}_delete', './apiSpecGeneratorResult/AP_204__post_{postNo}_pre-next_get', './apiSpecGeneratorResult/AP_206__redis_sample_get_get', './apiSpecGeneratorResult/AP_207__redis_sample_put_get', './apiSpecGeneratorResult/AP_208__subscribe_post', './apiSpecGeneratorResult/AP_209__subscribe_list_post', './apiSpecGeneratorResult/AP_210__tb_post_get', './apiSpecGeneratorResult/AP_212__version_get']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  category-api.json
 apiSubCnt:  14
-errReqCnt:  2
-errReqPercent:  14.285714285714285
-errResCnt:  4
-errResPercent:  28.57142857142857
-errReqList:  ['./apiSpecGeneratorResult/AP_217__tb_category_post', './apiSpecGeneratorResult/AP_219__tb_category_detail_post']
-errResList:  ['./apiSpecGeneratorResult/AP_213__add_category_{projectCd}_{siteId}_post', './apiSpecGeneratorResult/AP_220__tb_category_detail_nation_get', './apiSpecGeneratorResult/AP_222__tb_category_detail_{projectCd}_{siteId}_{masterCd}_{detailCd}_{langCd}_delete', './apiSpecGeneratorResult/AP_225__tb_category_{projectCd}_{siteId}_{masterCd}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  common-api2.json
 apiSubCnt:  47
-errReqCnt:  17
-errReqPercent:  36.17021276595745
-errResCnt:  35
-errResPercent:  74.46808510638297
-errReqList:  ['./apiSpecGeneratorResult/AP_228__block_post', './apiSpecGeneratorResult/AP_231__csv_download_post', './apiSpecGeneratorResult/AP_233__file_post', './apiSpecGeneratorResult/AP_234__file_delete', './apiSpecGeneratorResult/AP_243__file_image_post', './apiSpecGeneratorResult/AP_246__file_single_post', './apiSpecGeneratorResult/AP_253__like_toggle_post', './apiSpecGeneratorResult/AP_254__redis_cacheable_get', './apiSpecGeneratorResult/AP_255__redis_get_get', './apiSpecGeneratorResult/AP_256__redis_put_get', './apiSpecGeneratorResult/AP_258__report_post', './apiSpecGeneratorResult/AP_259__report_blind_post', './apiSpecGeneratorResult/AP_264__terms_post', './apiSpecGeneratorResult/AP_265__terms_patch', './apiSpecGeneratorResult/AP_267__terms-history_post', './apiSpecGeneratorResult/AP_268__terms-history_patch', './apiSpecGeneratorResult/AP_269__terms-history_multi_post']
-errResList:  ['./apiSpecGeneratorResult/AP_228__block_post', './apiSpecGeneratorResult/AP_230__block_unblock_{blockNo}_post', './apiSpecGeneratorResult/AP_231__csv_download_post', './apiSpecGeneratorResult/AP_232__file_get', './apiSpecGeneratorResult/AP_233__file_post', './apiSpecGeneratorResult/AP_234__file_delete', './apiSpecGeneratorResult/AP_235__file_del_{attachNo}_delete', './apiSpecGeneratorResult/AP_236__file_download_index_{attachNo}_get', './apiSpecGeneratorResult/AP_237__file_download_index_{projectCd}_{siteId}_{attachNo}_get', './apiSpecGeneratorResult/AP_238__file_download_{attachCd}_get', './apiSpecGeneratorResult/AP_239__file_download_{projectCd}_{siteId}_{attachCd}_get', './apiSpecGeneratorResult/AP_240__file_group_{attachGrpCd}_get', './apiSpecGeneratorResult/AP_241__file_group_{attachGrpCd}_delete', './apiSpecGeneratorResult/AP_242__file_group_{refId}_{refKey}_delete', './apiSpecGeneratorResult/AP_243__file_image_post', './apiSpecGeneratorResult/AP_244__file_image_{attachCd}_get', './apiSpecGeneratorResult/AP_245__file_info_{attachCd}_patch', './apiSpecGeneratorResult/AP_246__file_single_post', './apiSpecGeneratorResult/AP_248__file_{attachCd}_delete', './apiSpecGeneratorResult/AP_249__file_{attachCd}_patch', './apiSpecGeneratorResult/AP_250__ftp_upload_post', './apiSpecGeneratorResult/AP_251__like_get', './apiSpecGeneratorResult/AP_252__like_count_get', './apiSpecGeneratorResult/AP_253__like_toggle_post', './apiSpecGeneratorResult/AP_255__redis_get_get', './apiSpecGeneratorResult/AP_256__redis_put_get', './apiSpecGeneratorResult/AP_259__report_blind_post', './apiSpecGeneratorResult/AP_261__report_process_{reportNo}_patch', './apiSpecGeneratorResult/AP_264__terms_post', './apiSpecGeneratorResult/AP_265__terms_patch', './apiSpecGeneratorResult/AP_267__terms-history_post', './apiSpecGeneratorResult/AP_268__terms-history_patch', './apiSpecGeneratorResult/AP_269__terms-history_multi_post', './apiSpecGeneratorResult/AP_271__terms-history_{historyNo}_delete', './apiSpecGeneratorResult/AP_273__terms_{termsNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  consulting-api.json
 apiSubCnt:  93
-errReqCnt:  23
-errReqPercent:  24.731182795698924
-errResCnt:  23
-errResPercent:  24.731182795698924
-errReqList:  ['./apiSpecGeneratorResult/AP_274__account-meeting_schdul_block_post', './apiSpecGeneratorResult/AP_281__meeting-entrance_survey_regist-survey-result_post', './apiSpecGeneratorResult/AP_282__meeting-entrance_video-room_post', './apiSpecGeneratorResult/AP_288__meeting-request_post', './apiSpecGeneratorResult/AP_292__message_post', './apiSpecGeneratorResult/AP_294__message_meeting_post', './apiSpecGeneratorResult/AP_299__tb_message_post', './apiSpecGeneratorResult/AP_301__tb_message_rcv_post', './apiSpecGeneratorResult/AP_306__tb_message_reason_post', './apiSpecGeneratorResult/AP_314__tb_schdul_post', './apiSpecGeneratorResult/AP_316__tb_schdul_detail_post', './apiSpecGeneratorResult/AP_318__tb_schdul_detail_block_post', './apiSpecGeneratorResult/AP_320__tb_schdul_detail_block_hist_post', './apiSpecGeneratorResult/AP_321__tb_schdul_detail_block_hist-after_post', './apiSpecGeneratorResult/AP_328__tb_schdul_detail_choice_post', './apiSpecGeneratorResult/AP_330__tb_schdul_detail_choice_hist_post', './apiSpecGeneratorResult/AP_331__tb_schdul_detail_choice_hist-after_post', './apiSpecGeneratorResult/AP_340__tb_schdul_displayButton_post', './apiSpecGeneratorResult/AP_342__tb_schdul_notice_set_post', './apiSpecGeneratorResult/AP_350__tb_video_post', './apiSpecGeneratorResult/AP_352__tb_video_detail_post', './apiSpecGeneratorResult/AP_360__tb_zoom_post', './apiSpecGeneratorResult/AP_362__tb_zoom_detail_post']
-errResList:  ['./apiSpecGeneratorResult/AP_274__account-meeting_schdul_block_post', './apiSpecGeneratorResult/AP_277__example_list_post', './apiSpecGeneratorResult/AP_280__meeting-entrance_link_{choiceNo}_patch', './apiSpecGeneratorResult/AP_281__meeting-entrance_survey_regist-survey-result_post', './apiSpecGeneratorResult/AP_303__tb_message_rcv_{rcvMsgNo}_delete', './apiSpecGeneratorResult/AP_308__tb_message_reason_{mgsRsnNo}_delete', './apiSpecGeneratorResult/AP_311__tb_message_{msgNo}_delete', './apiSpecGeneratorResult/AP_318__tb_schdul_detail_block_post', './apiSpecGeneratorResult/AP_323__tb_schdul_detail_block_hist_{histNo}_patch', './apiSpecGeneratorResult/AP_325__tb_schdul_detail_block_{userNo}_{detailNo}_delete', './apiSpecGeneratorResult/AP_326__tb_schdul_detail_block_{userNo}_{detailNo}_patch', './apiSpecGeneratorResult/AP_333__tb_schdul_detail_choice_hist_{histNo}_patch', './apiSpecGeneratorResult/AP_335__tb_schdul_detail_choice_{choiceNo}_delete', './apiSpecGeneratorResult/AP_336__tb_schdul_detail_choice_{choiceNo}_patch', './apiSpecGeneratorResult/AP_338__tb_schdul_detail_{detailNo}_delete', './apiSpecGeneratorResult/AP_344__tb_schdul_notice_set_{setNo}_delete', './apiSpecGeneratorResult/AP_347__tb_schdul_{schdulNo}_delete', './apiSpecGeneratorResult/AP_354__tb_video_detail_{videoDetailNo}_delete', './apiSpecGeneratorResult/AP_355__tb_video_detail_{videoDetailNo}_patch', './apiSpecGeneratorResult/AP_357__tb_video_{videoNo}_delete', './apiSpecGeneratorResult/AP_358__tb_video_{videoNo}_patch', './apiSpecGeneratorResult/AP_364__tb_zoom_detail_{zoomDetailNo}_patch', './apiSpecGeneratorResult/AP_366__tb_zoom_{zoomNo}_patch']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  contents-api.json
 apiSubCnt:  59
-errReqCnt:  18
-errReqPercent:  30.508474576271187
-errResCnt:  19
-errResPercent:  32.20338983050847
-errReqList:  ['./apiSpecGeneratorResult/AP_369__session_post', './apiSpecGeneratorResult/AP_370__session-comment_modify_post', './apiSpecGeneratorResult/AP_371__session-comment_register_post', './apiSpecGeneratorResult/AP_373__session-ctnt_post', './apiSpecGeneratorResult/AP_375__session-ctnt-mapp_modify-ord-list_patch', './apiSpecGeneratorResult/AP_376__session-ctnt_pre-next_post', './apiSpecGeneratorResult/AP_381__session-mapp_modify_post', './apiSpecGeneratorResult/AP_382__session-mapp_multi-modify_post', './apiSpecGeneratorResult/AP_383__session-mapp_register_post', './apiSpecGeneratorResult/AP_384__session-total_post', './apiSpecGeneratorResult/AP_385__session_pre-next_post', './apiSpecGeneratorResult/AP_389__tb_session_post', './apiSpecGeneratorResult/AP_394__tb_session-company_post', './apiSpecGeneratorResult/AP_399__tb_session-ctnt_post', './apiSpecGeneratorResult/AP_401__tb_session-ctnt-mapp_post', './apiSpecGeneratorResult/AP_406__tb_session-ctnt_detail_post', './apiSpecGeneratorResult/AP_414__tb_session-view_post', './apiSpecGeneratorResult/AP_419__tb_session_detail_post']
-errResList:  ['./apiSpecGeneratorResult/AP_375__session-ctnt-mapp_modify-ord-list_patch', './apiSpecGeneratorResult/AP_376__session-ctnt_pre-next_post', './apiSpecGeneratorResult/AP_378__session-ctnt_{ssnCtntNo}_delete', './apiSpecGeneratorResult/AP_381__session-mapp_modify_post', './apiSpecGeneratorResult/AP_382__session-mapp_multi-modify_post', './apiSpecGeneratorResult/AP_383__session-mapp_register_post', './apiSpecGeneratorResult/AP_385__session_pre-next_post', './apiSpecGeneratorResult/AP_386__session_{ssnId}_delete', './apiSpecGeneratorResult/AP_392__tb_session-comment_{cmtNo}_delete', './apiSpecGeneratorResult/AP_396__tb_session-company_{ssnCompanyNo}_delete', './apiSpecGeneratorResult/AP_403__tb_session-ctnt-mapp_{ssnCtntMappNo}_delete', './apiSpecGeneratorResult/AP_404__tb_session-ctnt-mapp_{ssnCtntMappNo}_patch', './apiSpecGeneratorResult/AP_408__tb_session-ctnt_detail_{ssnCtntNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_409__tb_session-ctnt_detail_{ssnCtntNo}_{langCd}_patch', './apiSpecGeneratorResult/AP_411__tb_session-ctnt_{ssnCtntNo}_delete', './apiSpecGeneratorResult/AP_412__tb_session-ctnt_{ssnCtntNo}_patch', './apiSpecGeneratorResult/AP_416__tb_session-view_{viewNo}_delete', './apiSpecGeneratorResult/AP_421__tb_session_detail_{ssnId}_{langCd}_delete', './apiSpecGeneratorResult/AP_424__tb_session_{ssnId}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  counseling-api.json
 apiSubCnt:  9
-errReqCnt:  4
-errReqPercent:  44.44444444444444
-errResCnt:  5
-errResPercent:  55.55555555555556
-errReqList:  ['./apiSpecGeneratorResult/AP_427__counseling_post', './apiSpecGeneratorResult/AP_428__counseling_patch', './apiSpecGeneratorResult/AP_429__counseling_comment_post', './apiSpecGeneratorResult/AP_431__counseling_manager_patch']
-errResList:  ['./apiSpecGeneratorResult/AP_428__counseling_patch', './apiSpecGeneratorResult/AP_429__counseling_comment_post', './apiSpecGeneratorResult/AP_430__counseling_comment_{commentNo}_delete', './apiSpecGeneratorResult/AP_431__counseling_manager_patch', './apiSpecGeneratorResult/AP_433__counseling_{postNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  coupon-api.json
 apiSubCnt:  16
-errReqCnt:  13
-errReqPercent:  81.25
-errResCnt:  11
-errResPercent:  68.75
-errReqList:  ['./apiSpecGeneratorResult/AP_435__admin_coupon_goods_patch', './apiSpecGeneratorResult/AP_436__admin_coupon_goods_register_post', './apiSpecGeneratorResult/AP_438__coupon_post', './apiSpecGeneratorResult/AP_439__coupon_patch', './apiSpecGeneratorResult/AP_440__coupon_apply_post', './apiSpecGeneratorResult/AP_441__coupon_duplicateChk_post', './apiSpecGeneratorResult/AP_442__coupon_goods_post', './apiSpecGeneratorResult/AP_443__coupon_goods_mapping_post', './apiSpecGeneratorResult/AP_444__coupon_issuance_post', './apiSpecGeneratorResult/AP_445__coupon_mapp_post', './apiSpecGeneratorResult/AP_446__coupon_mapp_register_post', './apiSpecGeneratorResult/AP_448__coupon_register_post', './apiSpecGeneratorResult/AP_449__coupon_useCoupon_post']
-errResList:  ['./apiSpecGeneratorResult/AP_435__admin_coupon_goods_patch', './apiSpecGeneratorResult/AP_436__admin_coupon_goods_register_post', './apiSpecGeneratorResult/AP_437__admin_coupon_goods_{couponGoodsNo}_delete', './apiSpecGeneratorResult/AP_439__coupon_patch', './apiSpecGeneratorResult/AP_441__coupon_duplicateChk_post', './apiSpecGeneratorResult/AP_444__coupon_issuance_post', './apiSpecGeneratorResult/AP_446__coupon_mapp_register_post', './apiSpecGeneratorResult/AP_447__coupon_mapp_{couponMappNo}_delete', './apiSpecGeneratorResult/AP_448__coupon_register_post', './apiSpecGeneratorResult/AP_449__coupon_useCoupon_post', './apiSpecGeneratorResult/AP_450__coupon_{couponNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  goods-api.json
 apiSubCnt:  5
-errReqCnt:  5
-errReqPercent:  100.0
-errResCnt:  2
-errResPercent:  40.0
-errReqList:  ['./apiSpecGeneratorResult/AP_451___get', './apiSpecGeneratorResult/AP_452__example_me_get', './apiSpecGeneratorResult/AP_453__example_tag_get', './apiSpecGeneratorResult/AP_454__example_v2_admin-token_post', './apiSpecGeneratorResult/AP_455__example_v2_user-token_post']
-errResList:  ['./apiSpecGeneratorResult/AP_451___get', './apiSpecGeneratorResult/AP_453__example_tag_get']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  inquiry-api.json
 apiSubCnt:  5
-errReqCnt:  5
-errReqPercent:  100.0
-errResCnt:  2
-errResPercent:  40.0
-errReqList:  ['./apiSpecGeneratorResult/AP_456___get', './apiSpecGeneratorResult/AP_457__example_me_get', './apiSpecGeneratorResult/AP_458__example_tag_get', './apiSpecGeneratorResult/AP_459__example_v2_admin-token_post', './apiSpecGeneratorResult/AP_460__example_v2_user-token_post']
-errResList:  ['./apiSpecGeneratorResult/AP_456___get', './apiSpecGeneratorResult/AP_458__example_tag_get']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  logging-api.json
 apiSubCnt:  30
-errReqCnt:  29
-errReqPercent:  96.66666666666667
-errResCnt:  22
-errResPercent:  73.33333333333333
-errReqList:  ['./apiSpecGeneratorResult/AP_461__log_addClickLog_post', './apiSpecGeneratorResult/AP_462__log_addErrorLog_post', './apiSpecGeneratorResult/AP_463__log_addLoginHistoryLog_post', './apiSpecGeneratorResult/AP_464__log_addMovieLog_post', './apiSpecGeneratorResult/AP_465__log_addMovietimeLog_post', './apiSpecGeneratorResult/AP_466__log_addSiteLog_post', './apiSpecGeneratorResult/AP_467__log_addSiteLogMenuname_post', './apiSpecGeneratorResult/AP_468__log_addUserLog_post', './apiSpecGeneratorResult/AP_469__log_addVisitProfileLog_post', './apiSpecGeneratorResult/AP_470__log_getClickLogList_post', './apiSpecGeneratorResult/AP_471__log_getErrorLogList_post', './apiSpecGeneratorResult/AP_472__log_getLoginHistoryLogList_post', './apiSpecGeneratorResult/AP_473__log_getLogoutHistoryLogList_post', './apiSpecGeneratorResult/AP_474__log_getMovieLogList_post', './apiSpecGeneratorResult/AP_475__log_getMovietimeLogList_post', './apiSpecGeneratorResult/AP_476__log_getSiteLogList_post', './apiSpecGeneratorResult/AP_477__log_getSiteLogMenunameList_post', './apiSpecGeneratorResult/AP_478__log_getUserLogList_post', './apiSpecGeneratorResult/AP_479__log_getVisitProfileLogList_post', './apiSpecGeneratorResult/AP_481__log_setSiteLogMenuname_post', './apiSpecGeneratorResult/AP_482__log_v2_login-history_post', './apiSpecGeneratorResult/AP_483__logging_regist-click-log_post', './apiSpecGeneratorResult/AP_484__logging_regist-download-log_post', './apiSpecGeneratorResult/AP_485__logging_regist-movie-log_post', './apiSpecGeneratorResult/AP_486__logging_regist-movie-sessiontime-log_post', './apiSpecGeneratorResult/AP_487__logging_regist-movietime-log_post', './apiSpecGeneratorResult/AP_488__logging_regist-site-log_post', './apiSpecGeneratorResult/AP_489__logging_regist-sns-share-log_post', './apiSpecGeneratorResult/AP_490__logging_regist-visit-profile-log_post']
-errResList:  ['./apiSpecGeneratorResult/AP_461__log_addClickLog_post', './apiSpecGeneratorResult/AP_462__log_addErrorLog_post', './apiSpecGeneratorResult/AP_463__log_addLoginHistoryLog_post', './apiSpecGeneratorResult/AP_464__log_addMovieLog_post', './apiSpecGeneratorResult/AP_465__log_addMovietimeLog_post', './apiSpecGeneratorResult/AP_466__log_addSiteLog_post', './apiSpecGeneratorResult/AP_467__log_addSiteLogMenuname_post', './apiSpecGeneratorResult/AP_468__log_addUserLog_post', './apiSpecGeneratorResult/AP_469__log_addVisitProfileLog_post', './apiSpecGeneratorResult/AP_470__log_getClickLogList_post', './apiSpecGeneratorResult/AP_471__log_getErrorLogList_post', './apiSpecGeneratorResult/AP_472__log_getLoginHistoryLogList_post', './apiSpecGeneratorResult/AP_473__log_getLogoutHistoryLogList_post', './apiSpecGeneratorResult/AP_474__log_getMovieLogList_post', './apiSpecGeneratorResult/AP_475__log_getMovietimeLogList_post', './apiSpecGeneratorResult/AP_476__log_getSiteLogList_post', './apiSpecGeneratorResult/AP_477__log_getSiteLogMenunameList_post', './apiSpecGeneratorResult/AP_478__log_getUserLogList_post', './apiSpecGeneratorResult/AP_479__log_getVisitProfileLogList_post', './apiSpecGeneratorResult/AP_480__log_read_v2_login-history_post', './apiSpecGeneratorResult/AP_481__log_setSiteLogMenuname_post', './apiSpecGeneratorResult/AP_482__log_v2_login-history_post']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  login2-api.json
 apiSubCnt:  11
-errReqCnt:  7
-errReqPercent:  63.63636363636363
-errResCnt:  8
-errResPercent:  72.72727272727273
-errReqList:  ['./apiSpecGeneratorResult/AP_491__auth_admin_password_post', './apiSpecGeneratorResult/AP_493__auth_id-list_post', './apiSpecGeneratorResult/AP_494__auth_local_post', './apiSpecGeneratorResult/AP_495__auth_me_get', './apiSpecGeneratorResult/AP_496__auth_password_post', './apiSpecGeneratorResult/AP_499__auth_social_post', './apiSpecGeneratorResult/AP_500__auth_social-decode_post']
-errResList:  ['./apiSpecGeneratorResult/AP_491__auth_admin_password_post', './apiSpecGeneratorResult/AP_492__auth_email_post', './apiSpecGeneratorResult/AP_493__auth_id-list_post', './apiSpecGeneratorResult/AP_496__auth_password_post', './apiSpecGeneratorResult/AP_497__auth_password_email_post', './apiSpecGeneratorResult/AP_498__auth_social_get', './apiSpecGeneratorResult/AP_500__auth_social-decode_post', './apiSpecGeneratorResult/AP_501__auth_{verifyKey}_get']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mailing-api.json
 apiSubCnt:  34
-errReqCnt:  13
-errReqPercent:  38.23529411764706
-errResCnt:  18
-errResPercent:  52.94117647058824
-errReqList:  ['./apiSpecGeneratorResult/AP_504__mailsend_multi_post', './apiSpecGeneratorResult/AP_505__mailsend_resend_post', './apiSpecGeneratorResult/AP_506__mailsend_single_post', './apiSpecGeneratorResult/AP_507__mailsend_single_reserved-mail_post', './apiSpecGeneratorResult/AP_512__tb_mailsend_delete', './apiSpecGeneratorResult/AP_513__tb_mailsend_patch', './apiSpecGeneratorResult/AP_516__tb_sender_put', './apiSpecGeneratorResult/AP_517__tb_sender_post', './apiSpecGeneratorResult/AP_518__tb_sender_patch', './apiSpecGeneratorResult/AP_522__tb_template_post', './apiSpecGeneratorResult/AP_523__tb_template_patch', './apiSpecGeneratorResult/AP_529__template_detail_post', './apiSpecGeneratorResult/AP_532__template_key_post']
-errResList:  ['./apiSpecGeneratorResult/AP_504__mailsend_multi_post', './apiSpecGeneratorResult/AP_505__mailsend_resend_post', './apiSpecGeneratorResult/AP_506__mailsend_single_post', './apiSpecGeneratorResult/AP_507__mailsend_single_reserved-mail_post', './apiSpecGeneratorResult/AP_508__mailsend_single_{recipientNo}_post', './apiSpecGeneratorResult/AP_512__tb_mailsend_delete', './apiSpecGeneratorResult/AP_513__tb_mailsend_patch', './apiSpecGeneratorResult/AP_516__tb_sender_put', './apiSpecGeneratorResult/AP_517__tb_sender_post', './apiSpecGeneratorResult/AP_518__tb_sender_patch', './apiSpecGeneratorResult/AP_520__tb_sender_{senderSeq}_delete', './apiSpecGeneratorResult/AP_523__tb_template_patch', './apiSpecGeneratorResult/AP_525__tb_template_detail_{tmplDetailSeq}_put', './apiSpecGeneratorResult/AP_526__tb_template_detail_{tmplDetailSeq}_delete', './apiSpecGeneratorResult/AP_528__tb_template_{tmplSeq}_put', './apiSpecGeneratorResult/AP_531__template_key_put', './apiSpecGeneratorResult/AP_532__template_key_post', './apiSpecGeneratorResult/AP_534__template_keys_{projectCd}_{siteId}_{tmplDetailSeq}_{langCd}_post']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mavatar-api.json
 apiSubCnt:  6
-errReqCnt:  1
-errReqPercent:  16.666666666666664
-errResCnt:  1
-errResPercent:  16.666666666666664
-errReqList:  ['./apiSpecGeneratorResult/AP_537__tb_avatar_post']
-errResList:  ['./apiSpecGeneratorResult/AP_541__tb_mavatar_{avatarNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mbody-api.json
 apiSubCnt:  5
-errReqCnt:  1
-errReqPercent:  20.0
-errResCnt:  1
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_543__tb_mbody_regist_post']
-errResList:  ['./apiSpecGeneratorResult/AP_545__tb_mbody_{bodyNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mcloth-api.json
 apiSubCnt:  5
-errReqCnt:  1
-errReqPercent:  20.0
-errResCnt:  1
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_548__tb_mcloth_regist_post']
-errResList:  ['./apiSpecGeneratorResult/AP_550__tb_mcloth_{clothNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mface-api.json
 apiSubCnt:  5
-errReqCnt:  1
-errReqPercent:  20.0
-errResCnt:  1
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_553__tb_mface_regist_post']
-errResList:  ['./apiSpecGeneratorResult/AP_555__tb_mface_{faceNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mhair-api.json
 apiSubCnt:  5
-errReqCnt:  1
-errReqPercent:  20.0
-errResCnt:  1
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_558__tb_mhair_regist_post']
-errResList:  ['./apiSpecGeneratorResult/AP_560__tb_mhair_{hairNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  micecontents-api.json
 apiSubCnt:  22
-errReqCnt:  5
-errReqPercent:  22.727272727272727
-errResCnt:  5
-errResPercent:  22.727272727272727
-errReqList:  ['./apiSpecGeneratorResult/AP_562__company-ctnt_post', './apiSpecGeneratorResult/AP_564__company-ctnt_modify-disp-order-list_patch', './apiSpecGeneratorResult/AP_570__tb_company-ctnt_post', './apiSpecGeneratorResult/AP_572__tb_company-ctnt_detail_post', './apiSpecGeneratorResult/AP_574__tb_company-ctnt_detail-sub_post']
-errResList:  ['./apiSpecGeneratorResult/AP_564__company-ctnt_modify-disp-order-list_patch', './apiSpecGeneratorResult/AP_565__company-ctnt_{companyCtntNo}_delete', './apiSpecGeneratorResult/AP_576__tb_company-ctnt_detail-sub_{companyCtntDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_579__tb_company-ctnt_detail_{companyCtntNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_582__tb_company-ctnt_{companyCtntNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mregion-api.json
 apiSubCnt:  5
-errReqCnt:  1
-errReqPercent:  20.0
-errResCnt:  1
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_585__tb_mregion_regist_post']
-errResList:  ['./apiSpecGeneratorResult/AP_588__tb_region_{regionNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mshoes-api.json
 apiSubCnt:  5
-errReqCnt:  1
-errReqPercent:  20.0
-errResCnt:  1
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_590__tb_mshoes_regist_post']
-errResList:  ['./apiSpecGeneratorResult/AP_592__tb_mshoes_{shoseNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  mypage-api.json
 apiSubCnt:  12
-errReqCnt:  2
-errReqPercent:  16.666666666666664
-errResCnt:  2
-errResPercent:  16.666666666666664
-errReqList:  ['./apiSpecGeneratorResult/AP_594__mypage_favorites_post', './apiSpecGeneratorResult/AP_601__mypage_schedule_post']
-errResList:  ['./apiSpecGeneratorResult/AP_599__mypage_favorites_{favNo}_delete', './apiSpecGeneratorResult/AP_605__mypage_schedule_{schdulNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  order-api.json
 apiSubCnt:  24
-errReqCnt:  10
-errReqPercent:  41.66666666666667
-errResCnt:  9
-errResPercent:  37.5
-errReqList:  ['./apiSpecGeneratorResult/AP_606__o2meetFranchisee_post', './apiSpecGeneratorResult/AP_608__order_modify_post', './apiSpecGeneratorResult/AP_609__order_register_post', './apiSpecGeneratorResult/AP_612__orderGoods_modify_post', './apiSpecGeneratorResult/AP_613__orderGoods_register_post', './apiSpecGeneratorResult/AP_616__ordersItems_insert_post', './apiSpecGeneratorResult/AP_620__ordersOptions_insert_post', './apiSpecGeneratorResult/AP_622__ordersOptions_modify_post', './apiSpecGeneratorResult/AP_625__ordersPrograms_insert_post', './apiSpecGeneratorResult/AP_627__ordersPrograms_modify_post']
-errResList:  ['./apiSpecGeneratorResult/AP_606__o2meetFranchisee_post', './apiSpecGeneratorResult/AP_608__order_modify_post', './apiSpecGeneratorResult/AP_612__orderGoods_modify_post', './apiSpecGeneratorResult/AP_615__ordersItems_delete_post', './apiSpecGeneratorResult/AP_619__ordersOptions_delete_post', './apiSpecGeneratorResult/AP_622__ordersOptions_modify_post', './apiSpecGeneratorResult/AP_624__ordersPrograms_delete_post', './apiSpecGeneratorResult/AP_627__ordersPrograms_modify_post', './apiSpecGeneratorResult/AP_629__paymentMethod_project_post']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  popup-api.json
 apiSubCnt:  31
-errReqCnt:  6
-errReqPercent:  19.35483870967742
-errResCnt:  6
-errResPercent:  19.35483870967742
-errReqList:  ['./apiSpecGeneratorResult/AP_630__notification_post', './apiSpecGeneratorResult/AP_635__popup_post', './apiSpecGeneratorResult/AP_642__tb_notification_post', './apiSpecGeneratorResult/AP_644__tb_notification_detail_post', './apiSpecGeneratorResult/AP_652__tb_popup_post', './apiSpecGeneratorResult/AP_654__tb_popup_detail_post']
-errResList:  ['./apiSpecGeneratorResult/AP_631__notification_{notificationSeq}_delete', './apiSpecGeneratorResult/AP_637__popup_{popupSeq}_delete', './apiSpecGeneratorResult/AP_646__tb_notification_detail_{notificationDetailSeq}_delete', './apiSpecGeneratorResult/AP_649__tb_notification_{notificationSeq}_delete', './apiSpecGeneratorResult/AP_656__tb_popup_detail_{popupDetailSeq}_delete', './apiSpecGeneratorResult/AP_659__tb_popup_{popupSeq}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  projectinfo-api.json
 apiSubCnt:  61
-errReqCnt:  24
-errReqPercent:  39.34426229508197
-errResCnt:  24
-errResPercent:  39.34426229508197
-errReqList:  ['./apiSpecGeneratorResult/AP_661__project_post', './apiSpecGeneratorResult/AP_662__project_patch', './apiSpecGeneratorResult/AP_663__project_regist_post', './apiSpecGeneratorResult/AP_667__site_post', './apiSpecGeneratorResult/AP_668__site_patch', './apiSpecGeneratorResult/AP_682__site_email_post', './apiSpecGeneratorResult/AP_683__site_email_patch', './apiSpecGeneratorResult/AP_684__site_email_regist_post', './apiSpecGeneratorResult/AP_687__site_language_post', './apiSpecGeneratorResult/AP_694__site_layout_modify_post', './apiSpecGeneratorResult/AP_695__site_layout_read_post', './apiSpecGeneratorResult/AP_696__site_layout_read_partition_post', './apiSpecGeneratorResult/AP_698__site_layout_regist_post', './apiSpecGeneratorResult/AP_699__site_layout_remove_post', './apiSpecGeneratorResult/AP_700__site_link_post', './apiSpecGeneratorResult/AP_706__site_menu_post', './apiSpecGeneratorResult/AP_707__site_menu_patch', './apiSpecGeneratorResult/AP_709__site_menu_regist_post', './apiSpecGeneratorResult/AP_713__site_navibar_modify_post', './apiSpecGeneratorResult/AP_714__site_navibar_read_post', './apiSpecGeneratorResult/AP_715__site_navibar_read_parition_post', './apiSpecGeneratorResult/AP_717__site_navibar_regist_post', './apiSpecGeneratorResult/AP_718__site_navibar_remove_post', './apiSpecGeneratorResult/AP_719__site_regist_post']
-errResList:  ['./apiSpecGeneratorResult/AP_665__project_{projectCd}_delete', './apiSpecGeneratorResult/AP_666__project_{projectCd}_{langCd}_delete', './apiSpecGeneratorResult/AP_670__site_detail-sub_{projectCd}_{siteId}_put', './apiSpecGeneratorResult/AP_671__site_detail-sub_{projectCd}_{siteId}_delete', './apiSpecGeneratorResult/AP_672__site_detail-sub_{projectCd}_{siteId}_multi_put', './apiSpecGeneratorResult/AP_673__site_detail-sub_{projectCd}_{siteId}_multi-regist_post', './apiSpecGeneratorResult/AP_674__site_detail-sub_{projectCd}_{siteId}_regist_post', './apiSpecGeneratorResult/AP_676__site_detail_{projectCd}_{siteId}_delete', './apiSpecGeneratorResult/AP_677__site_detail_{projectCd}_{siteId}_patch', './apiSpecGeneratorResult/AP_678__site_detail_{projectCd}_{siteId}_multi_patch', './apiSpecGeneratorResult/AP_679__site_detail_{projectCd}_{siteId}_multi-regist_post', './apiSpecGeneratorResult/AP_680__site_detail_{projectCd}_{siteId}_regist_post', './apiSpecGeneratorResult/AP_686__site_email_{siteEmailAccNo}_delete', './apiSpecGeneratorResult/AP_688__site_language_{projectCd}_{siteId}_put', './apiSpecGeneratorResult/AP_689__site_language_{projectCd}_{siteId}_multi_put', './apiSpecGeneratorResult/AP_690__site_language_{projectCd}_{siteId}_multi-regist_post', './apiSpecGeneratorResult/AP_691__site_language_{projectCd}_{siteId}_regist_post', './apiSpecGeneratorResult/AP_693__site_language_{projectCd}_{siteId}_{langCd}_delete', './apiSpecGeneratorResult/AP_701__site_link_remove_detail_{siteLinkDetailNo}_post', './apiSpecGeneratorResult/AP_702__site_link_remove_{siteLinkNo}_post', './apiSpecGeneratorResult/AP_708__site_menu_copy_{projectCd}_{siteId}_post', './apiSpecGeneratorResult/AP_711__site_menu_{menuNo}_delete', './apiSpecGeneratorResult/AP_712__site_menu_{menuNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_721__site_{projectCd}_{siteId}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  projectinfo2-api.json
 apiSubCnt:  73
-errReqCnt:  62
-errReqPercent:  84.93150684931507
-errResCnt:  11
-errResPercent:  15.068493150684931
-errReqList:  ['./apiSpecGeneratorResult/AP_722__project_detail_modify_post', './apiSpecGeneratorResult/AP_723__project_detail_register_post', './apiSpecGeneratorResult/AP_724__project_detail_remove_post', './apiSpecGeneratorResult/AP_726__project_modify_post', './apiSpecGeneratorResult/AP_727__project_read_post', './apiSpecGeneratorResult/AP_728__project_read_duplicate-check_post', './apiSpecGeneratorResult/AP_730__project_register_post', './apiSpecGeneratorResult/AP_731__project_remove_post', './apiSpecGeneratorResult/AP_732__site_config_modify_post', './apiSpecGeneratorResult/AP_733__site_config_multi-modify_post', './apiSpecGeneratorResult/AP_734__site_config_multi-register_post', './apiSpecGeneratorResult/AP_735__site_config_multi-update_post', './apiSpecGeneratorResult/AP_737__site_config_register_post', './apiSpecGeneratorResult/AP_738__site_config_remove_post', './apiSpecGeneratorResult/AP_739__site_detail-sub_modify_post', './apiSpecGeneratorResult/AP_740__site_detail-sub_multi-modify_post', './apiSpecGeneratorResult/AP_741__site_detail-sub_multi-register_post', './apiSpecGeneratorResult/AP_743__site_detail-sub_register_post', './apiSpecGeneratorResult/AP_744__site_detail-sub_remove_post', './apiSpecGeneratorResult/AP_745__site_detail_modify_post', './apiSpecGeneratorResult/AP_747__site_detail_register_post', './apiSpecGeneratorResult/AP_748__site_detail_remove_post', './apiSpecGeneratorResult/AP_749__site_language_modify_post', './apiSpecGeneratorResult/AP_750__site_language_multi-modify_post', './apiSpecGeneratorResult/AP_751__site_language_multi-register_post', './apiSpecGeneratorResult/AP_752__site_language_read_post', './apiSpecGeneratorResult/AP_754__site_language_register_post', './apiSpecGeneratorResult/AP_755__site_language_remove_post', './apiSpecGeneratorResult/AP_756__site_layout_modify_post', './apiSpecGeneratorResult/AP_757__site_layout_modify-order_post', './apiSpecGeneratorResult/AP_758__site_layout_read_post', './apiSpecGeneratorResult/AP_759__site_layout_read_partition_post', './apiSpecGeneratorResult/AP_761__site_layout_register_post', './apiSpecGeneratorResult/AP_762__site_layout_remove_post', './apiSpecGeneratorResult/AP_763__site_link_detail_remove_post', './apiSpecGeneratorResult/AP_764__site_link_modify_post', './apiSpecGeneratorResult/AP_765__site_link_read_post', './apiSpecGeneratorResult/AP_767__site_link_register_post', './apiSpecGeneratorResult/AP_768__site_link_remove_post', './apiSpecGeneratorResult/AP_769__site_menu_copy-menu_post', './apiSpecGeneratorResult/AP_770__site_menu_detail_remove_post', './apiSpecGeneratorResult/AP_771__site_menu_modify_post', './apiSpecGeneratorResult/AP_772__site_menu_modify-order_post', './apiSpecGeneratorResult/AP_773__site_menu_read_post', './apiSpecGeneratorResult/AP_774__site_menu_read_partition_post', './apiSpecGeneratorResult/AP_776__site_menu_register_post', './apiSpecGeneratorResult/AP_777__site_menu_remove_post', './apiSpecGeneratorResult/AP_778__site_menu_reset-menu_post', './apiSpecGeneratorResult/AP_779__site_modify_post', './apiSpecGeneratorResult/AP_780__site_navibar_copy-navibar_post', './apiSpecGeneratorResult/AP_781__site_navibar_modify_post', './apiSpecGeneratorResult/AP_782__site_navibar_modify-order_post', './apiSpecGeneratorResult/AP_783__site_navibar_read_post', './apiSpecGeneratorResult/AP_784__site_navibar_read_partition_post', './apiSpecGeneratorResult/AP_786__site_navibar_register_post', './apiSpecGeneratorResult/AP_787__site_navibar_remove_post', './apiSpecGeneratorResult/AP_788__site_navibar_reset-navibar_post', './apiSpecGeneratorResult/AP_789__site_read_post', './apiSpecGeneratorResult/AP_790__site_read_duplicate-check_post', './apiSpecGeneratorResult/AP_791__site_read_site-id-generater_post', './apiSpecGeneratorResult/AP_793__site_register_post', './apiSpecGeneratorResult/AP_794__site_remove_post']
-errResList:  ['./apiSpecGeneratorResult/AP_724__project_detail_remove_post', './apiSpecGeneratorResult/AP_731__project_remove_post', './apiSpecGeneratorResult/AP_733__site_config_multi-modify_post', './apiSpecGeneratorResult/AP_734__site_config_multi-register_post', './apiSpecGeneratorResult/AP_735__site_config_multi-update_post', './apiSpecGeneratorResult/AP_740__site_detail-sub_multi-modify_post', './apiSpecGeneratorResult/AP_741__site_detail-sub_multi-register_post', './apiSpecGeneratorResult/AP_763__site_link_detail_remove_post', './apiSpecGeneratorResult/AP_769__site_menu_copy-menu_post', './apiSpecGeneratorResult/AP_770__site_menu_detail_remove_post', './apiSpecGeneratorResult/AP_780__site_navibar_copy-navibar_post']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  quiz-api.json
 apiSubCnt:  63
-errReqCnt:  20
-errReqPercent:  31.746031746031743
-errResCnt:  18
-errResPercent:  28.57142857142857
-errReqList:  ['./apiSpecGeneratorResult/AP_796__admin_goods_post', './apiSpecGeneratorResult/AP_797__admin_goods_patch', './apiSpecGeneratorResult/AP_802__admin_goods_point_plus_patch', './apiSpecGeneratorResult/AP_803__admin_goods_point_sub_patch', './apiSpecGeneratorResult/AP_809__admin_group_site_post', './apiSpecGeneratorResult/AP_810__admin_group_site_patch', './apiSpecGeneratorResult/AP_814__admin_link_post', './apiSpecGeneratorResult/AP_815__admin_link_patch', './apiSpecGeneratorResult/AP_819__admin_qna_post', './apiSpecGeneratorResult/AP_820__admin_qna_patch', './apiSpecGeneratorResult/AP_830__admin_site_post', './apiSpecGeneratorResult/AP_831__admin_site_patch', './apiSpecGeneratorResult/AP_832__admin_site_multi_post', './apiSpecGeneratorResult/AP_841__admin_tb_group_post', './apiSpecGeneratorResult/AP_842__admin_tb_group_patch', './apiSpecGeneratorResult/AP_846__goods_history_post', './apiSpecGeneratorResult/AP_850__goods_point_plus_patch', './apiSpecGeneratorResult/AP_851__goods_point_sub_patch', './apiSpecGeneratorResult/AP_855__submit_post', './apiSpecGeneratorResult/AP_856__submit_patch']
-errResList:  ['./apiSpecGeneratorResult/AP_797__admin_goods_patch', './apiSpecGeneratorResult/AP_800__admin_goods_history_{historyNo}_delete', './apiSpecGeneratorResult/AP_806__admin_goods_{goodsNo}_delete', './apiSpecGeneratorResult/AP_810__admin_group_site_patch', './apiSpecGeneratorResult/AP_815__admin_link_patch', './apiSpecGeneratorResult/AP_817__admin_link_{linkNo}_delete', './apiSpecGeneratorResult/AP_820__admin_qna_patch', './apiSpecGeneratorResult/AP_822__admin_qna_answer_{answerNo}_delete', './apiSpecGeneratorResult/AP_824__admin_qna_example_{exampleNo}_delete', './apiSpecGeneratorResult/AP_826__admin_qna_question_{questionNo}_delete', './apiSpecGeneratorResult/AP_827__admin_qna_{questionNo}_delete', './apiSpecGeneratorResult/AP_831__admin_site_patch', './apiSpecGeneratorResult/AP_834__admin_site_{siteNo}_delete', './apiSpecGeneratorResult/AP_839__admin_submit_{submitNo}_delete', './apiSpecGeneratorResult/AP_842__admin_tb_group_patch', './apiSpecGeneratorResult/AP_844__admin_tb_group_{groupNo}_delete', './apiSpecGeneratorResult/AP_848__goods_history_{historyNo}_delete', './apiSpecGeneratorResult/AP_856__submit_patch']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  session-api.json
 apiSubCnt:  120
-errReqCnt:  24
-errReqPercent:  20.0
-errResCnt:  24
-errResPercent:  20.0
-errReqList:  ['./apiSpecGeneratorResult/AP_863__session-mapp_modify_post', './apiSpecGeneratorResult/AP_864__session-mapp_register_post', './apiSpecGeneratorResult/AP_867__session_pre-next_post', './apiSpecGeneratorResult/AP_873__tb_interpreter_post', './apiSpecGeneratorResult/AP_875__tb_interpreter_detail_post', './apiSpecGeneratorResult/AP_877__tb_interpreter_detail-sub_post', './apiSpecGeneratorResult/AP_888__tb_session_post', './apiSpecGeneratorResult/AP_890__tb_session-comment_post', './apiSpecGeneratorResult/AP_895__tb_session-company_post', './apiSpecGeneratorResult/AP_900__tb_session-ctnt_post', './apiSpecGeneratorResult/AP_902__tb_session-ctnt-mapp_post', './apiSpecGeneratorResult/AP_907__tb_session-ctnt_detail_post', './apiSpecGeneratorResult/AP_915__tb_session-interpreter_post', './apiSpecGeneratorResult/AP_917__tb_session-interpreter_detail_post', './apiSpecGeneratorResult/AP_925__tb_session-off-attend-req_post', './apiSpecGeneratorResult/AP_930__tb_session-private-join-user_post', './apiSpecGeneratorResult/AP_935__tb_session-speaker_post', './apiSpecGeneratorResult/AP_937__tb_session-speaker_detail_post', './apiSpecGeneratorResult/AP_945__tb_session-view_post', './apiSpecGeneratorResult/AP_951__tb_session_detail_post', './apiSpecGeneratorResult/AP_959__tb_speaker_post', './apiSpecGeneratorResult/AP_961__tb_speaker_detail_post', './apiSpecGeneratorResult/AP_969__tb_ssn-dtl-schdul_post', './apiSpecGeneratorResult/AP_971__tb_ssn-dtl-schdul_detail_post']
-errResList:  ['./apiSpecGeneratorResult/AP_863__session-mapp_modify_post', './apiSpecGeneratorResult/AP_864__session-mapp_register_post', './apiSpecGeneratorResult/AP_867__session_pre-next_post', './apiSpecGeneratorResult/AP_879__tb_interpreter_detail-sub_{interpreterDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_883__tb_interpreter_detail_{interpreterNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_885__tb_interpreter_{interpreterNo}_delete', './apiSpecGeneratorResult/AP_892__tb_session-comment_{cmtNo}_delete', './apiSpecGeneratorResult/AP_897__tb_session-company_{ssnCompanyNo}_delete', './apiSpecGeneratorResult/AP_904__tb_session-ctnt-mapp_{ssnCtntMappNo}_delete', './apiSpecGeneratorResult/AP_910__tb_session-ctnt_detail_{ssnCtntNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_912__tb_session-ctnt_{ssnCtntNo}_delete', './apiSpecGeneratorResult/AP_920__tb_session-interpreter_detail_{ssnInterpreterNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_922__tb_session-interpreter_{ssnInterpreterNo}_delete', './apiSpecGeneratorResult/AP_927__tb_session-off-attend-req_{reqNo}_delete', './apiSpecGeneratorResult/AP_932__tb_session-private-join-user_{ssnPrivateJoinUserSeq}_delete', './apiSpecGeneratorResult/AP_940__tb_session-speaker_detail_{ssnSpeakerNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_942__tb_session-speaker_{ssnSpeakerNo}_delete', './apiSpecGeneratorResult/AP_947__tb_session-view_{viewNo}_delete', './apiSpecGeneratorResult/AP_954__tb_session_detail_{ssnId}_{langCd}_delete', './apiSpecGeneratorResult/AP_956__tb_session_{ssnId}_delete', './apiSpecGeneratorResult/AP_964__tb_speaker_detail_{speakerNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_966__tb_speaker_{speakerNo}_delete', './apiSpecGeneratorResult/AP_973__tb_ssn-dtl-schdul_detail_{ssnDtlSchdulNo}_{langCd}_delete', './apiSpecGeneratorResult/AP_976__tb_ssn-dtl-schdul_{ssnDtlSchdulNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  stat2-api.json
 apiSubCnt:  20
-errReqCnt:  20
-errReqPercent:  100.0
-errResCnt:  10
-errResPercent:  50.0
-errReqList:  ['./apiSpecGeneratorResult/AP_978__access_read_all-access_post', './apiSpecGeneratorResult/AP_979__access_read_all-access_excel_post', './apiSpecGeneratorResult/AP_980__access_read_by-dist_post', './apiSpecGeneratorResult/AP_981__access_read_by-dist_excel_post', './apiSpecGeneratorResult/AP_982__survey-submit_read_post', './apiSpecGeneratorResult/AP_983__survey-submit_read_excel_post', './apiSpecGeneratorResult/AP_984__user_read_by-category_post', './apiSpecGeneratorResult/AP_985__user_read_by-category_excel_post', './apiSpecGeneratorResult/AP_986__video_read_detail-count_post', './apiSpecGeneratorResult/AP_987__video_read_detail-count_excel_post', './apiSpecGeneratorResult/AP_988__video_read_detail-time_post', './apiSpecGeneratorResult/AP_989__video_read_detail-time_excel_post', './apiSpecGeneratorResult/AP_990__video_read_view-count_post', './apiSpecGeneratorResult/AP_991__video_read_view-count_excel_post', './apiSpecGeneratorResult/AP_992__video_read_view-time_post', './apiSpecGeneratorResult/AP_993__video_read_view-time_excel_post', './apiSpecGeneratorResult/AP_994__visit_read_count_post', './apiSpecGeneratorResult/AP_995__visit_read_count_excel_post', './apiSpecGeneratorResult/AP_996__visit_read_time_post', './apiSpecGeneratorResult/AP_997__visit_read_time_excel_post']
-errResList:  ['./apiSpecGeneratorResult/AP_979__access_read_all-access_excel_post', './apiSpecGeneratorResult/AP_981__access_read_by-dist_excel_post', './apiSpecGeneratorResult/AP_983__survey-submit_read_excel_post', './apiSpecGeneratorResult/AP_985__user_read_by-category_excel_post', './apiSpecGeneratorResult/AP_987__video_read_detail-count_excel_post', './apiSpecGeneratorResult/AP_989__video_read_detail-time_excel_post', './apiSpecGeneratorResult/AP_991__video_read_view-count_excel_post', './apiSpecGeneratorResult/AP_993__video_read_view-time_excel_post', './apiSpecGeneratorResult/AP_995__visit_read_count_excel_post', './apiSpecGeneratorResult/AP_997__visit_read_time_excel_post']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  statistics-api.json
 apiSubCnt:  37
-errReqCnt:  31
-errReqPercent:  83.78378378378379
-errResCnt:  37
-errResPercent:  100.0
-errReqList:  ['./apiSpecGeneratorResult/AP_1002__stat_connection-by-age_post', './apiSpecGeneratorResult/AP_1003__stat_connection-by-browser_post', './apiSpecGeneratorResult/AP_1004__stat_connection-by-date_post', './apiSpecGeneratorResult/AP_1005__stat_connection-by-gender_post', './apiSpecGeneratorResult/AP_1006__stat_connection-by-nation_post', './apiSpecGeneratorResult/AP_1007__stat_connection-by-os_post', './apiSpecGeneratorResult/AP_1008__stat_connection-by-url_post', './apiSpecGeneratorResult/AP_1009__stat_kite_by-any_daily-access_post', './apiSpecGeneratorResult/AP_1010__stat_kite_by-any_time-access_post', './apiSpecGeneratorResult/AP_1011__stat_kite_by-browser_post', './apiSpecGeneratorResult/AP_1012__stat_kite_by-device_post', './apiSpecGeneratorResult/AP_1013__stat_kite_by-main_daily-access_post', './apiSpecGeneratorResult/AP_1014__stat_kite_by-main_time-access_post', './apiSpecGeneratorResult/AP_1015__stat_kite_by-nation_post', './apiSpecGeneratorResult/AP_1016__stat_kite_by-os_post', './apiSpecGeneratorResult/AP_1017__stat_kite_by-usergbn_post', './apiSpecGeneratorResult/AP_1018__stat_page-by-user_post', './apiSpecGeneratorResult/AP_1019__stat_user-by-moviecount_post', './apiSpecGeneratorResult/AP_1020__stat_user-by-movielist_post', './apiSpecGeneratorResult/AP_1023__video_detail-count_post', './apiSpecGeneratorResult/AP_1024__video_detail-count_excel_post', './apiSpecGeneratorResult/AP_1025__video_detail-time_post', './apiSpecGeneratorResult/AP_1026__video_detail-time_excel_post', './apiSpecGeneratorResult/AP_1027__video_view-count_post', './apiSpecGeneratorResult/AP_1028__video_view-count_excel_post', './apiSpecGeneratorResult/AP_1029__video_view-time_post', './apiSpecGeneratorResult/AP_1030__video_view-time_excel_post', './apiSpecGeneratorResult/AP_1031__visit_count_post', './apiSpecGeneratorResult/AP_1032__visit_count_excel_post', './apiSpecGeneratorResult/AP_1033__visit_time_post', './apiSpecGeneratorResult/AP_1034__visit_time_excel_post']
-errResList:  ['./apiSpecGeneratorResult/AP_998__access_by-access_get', './apiSpecGeneratorResult/AP_999__access_by-access_download_get', './apiSpecGeneratorResult/AP_1000__access_by-category_get', './apiSpecGeneratorResult/AP_1001__access_by-category_download_get', './apiSpecGeneratorResult/AP_1002__stat_connection-by-age_post', './apiSpecGeneratorResult/AP_1003__stat_connection-by-browser_post', './apiSpecGeneratorResult/AP_1004__stat_connection-by-date_post', './apiSpecGeneratorResult/AP_1005__stat_connection-by-gender_post', './apiSpecGeneratorResult/AP_1006__stat_connection-by-nation_post', './apiSpecGeneratorResult/AP_1007__stat_connection-by-os_post', './apiSpecGeneratorResult/AP_1008__stat_connection-by-url_post', './apiSpecGeneratorResult/AP_1009__stat_kite_by-any_daily-access_post', './apiSpecGeneratorResult/AP_1010__stat_kite_by-any_time-access_post', './apiSpecGeneratorResult/AP_1011__stat_kite_by-browser_post', './apiSpecGeneratorResult/AP_1012__stat_kite_by-device_post', './apiSpecGeneratorResult/AP_1013__stat_kite_by-main_daily-access_post', './apiSpecGeneratorResult/AP_1014__stat_kite_by-main_time-access_post', './apiSpecGeneratorResult/AP_1015__stat_kite_by-nation_post', './apiSpecGeneratorResult/AP_1016__stat_kite_by-os_post', './apiSpecGeneratorResult/AP_1017__stat_kite_by-usergbn_post', './apiSpecGeneratorResult/AP_1018__stat_page-by-user_post', './apiSpecGeneratorResult/AP_1019__stat_user-by-moviecount_post', './apiSpecGeneratorResult/AP_1020__stat_user-by-movielist_post', './apiSpecGeneratorResult/AP_1021__user_by-category_get', './apiSpecGeneratorResult/AP_1022__user_by-category_download_get', './apiSpecGeneratorResult/AP_1023__video_detail-count_post', './apiSpecGeneratorResult/AP_1024__video_detail-count_excel_post', './apiSpecGeneratorResult/AP_1025__video_detail-time_post', './apiSpecGeneratorResult/AP_1026__video_detail-time_excel_post', './apiSpecGeneratorResult/AP_1027__video_view-count_post', './apiSpecGeneratorResult/AP_1028__video_view-count_excel_post', './apiSpecGeneratorResult/AP_1029__video_view-time_post', './apiSpecGeneratorResult/AP_1030__video_view-time_excel_post', './apiSpecGeneratorResult/AP_1031__visit_count_post', './apiSpecGeneratorResult/AP_1032__visit_count_excel_post', './apiSpecGeneratorResult/AP_1033__visit_time_post', './apiSpecGeneratorResult/AP_1034__visit_time_excel_post']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  subscribe-api.json
 apiSubCnt:  59
-errReqCnt:  25
-errReqPercent:  42.3728813559322
-errResCnt:  48
-errResPercent:  81.35593220338984
-errReqList:  ['./apiSpecGeneratorResult/AP_1036__company_post', './apiSpecGeneratorResult/AP_1037__company_detail_post', './apiSpecGeneratorResult/AP_1038__company_detail_patch', './apiSpecGeneratorResult/AP_1040__company_detail-sub_put', './apiSpecGeneratorResult/AP_1041__company_detail-sub_post', './apiSpecGeneratorResult/AP_1042__company_detail-sub_patch', './apiSpecGeneratorResult/AP_1046__company_site_post', './apiSpecGeneratorResult/AP_1057__emp_post', './apiSpecGeneratorResult/AP_1058__emp_detail_post', './apiSpecGeneratorResult/AP_1059__emp_detail_patch', './apiSpecGeneratorResult/AP_1060__emp_detail-sub_post', './apiSpecGeneratorResult/AP_1061__emp_detail-sub_patch', './apiSpecGeneratorResult/AP_1069__user_post', './apiSpecGeneratorResult/AP_1070__user_delete', './apiSpecGeneratorResult/AP_1071__user_patch', './apiSpecGeneratorResult/AP_1072__user_detail_post', './apiSpecGeneratorResult/AP_1074__user_detail_patch', './apiSpecGeneratorResult/AP_1075__user_detail-sub_put', './apiSpecGeneratorResult/AP_1076__user_detail-sub_post', './apiSpecGeneratorResult/AP_1077__user_detail-sub_patch', './apiSpecGeneratorResult/AP_1082__user_service_post', './apiSpecGeneratorResult/AP_1085__user_site_post', './apiSpecGeneratorResult/AP_1086__user_site_delete', './apiSpecGeneratorResult/AP_1087__user_site-part_post', './apiSpecGeneratorResult/AP_1089__user_site_find_post']
-errResList:  ['./apiSpecGeneratorResult/AP_1037__company_detail_post', './apiSpecGeneratorResult/AP_1038__company_detail_patch', './apiSpecGeneratorResult/AP_1039__company_detail-sub_get', './apiSpecGeneratorResult/AP_1040__company_detail-sub_put', './apiSpecGeneratorResult/AP_1041__company_detail-sub_post', './apiSpecGeneratorResult/AP_1042__company_detail-sub_patch', './apiSpecGeneratorResult/AP_1043__company_detail-sub_{companyDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1044__company_detail_{companyNo}_delete', './apiSpecGeneratorResult/AP_1046__company_site_post', './apiSpecGeneratorResult/AP_1047__company_site_detail_{siteCompanyNo}_post', './apiSpecGeneratorResult/AP_1048__company_site_detail_{siteCompanyNo}_delete', './apiSpecGeneratorResult/AP_1049__company_site_detail_{siteCompanyNo}_patch', './apiSpecGeneratorResult/AP_1051__company_site_{siteCompanyNo}_delete', './apiSpecGeneratorResult/AP_1052__company_site_{siteCompanyNo}_patch', './apiSpecGeneratorResult/AP_1054__company_{companyNo}_delete', './apiSpecGeneratorResult/AP_1055__company_{companyNo}_patch', './apiSpecGeneratorResult/AP_1056__emp_get', './apiSpecGeneratorResult/AP_1058__emp_detail_post', './apiSpecGeneratorResult/AP_1059__emp_detail_patch', './apiSpecGeneratorResult/AP_1060__emp_detail-sub_post', './apiSpecGeneratorResult/AP_1061__emp_detail-sub_patch', './apiSpecGeneratorResult/AP_1062__emp_detail-sub_{empDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1063__emp_detail_{empNo}_delete', './apiSpecGeneratorResult/AP_1064__emp_{empNo}_get', './apiSpecGeneratorResult/AP_1065__emp_{empNo}_delete', './apiSpecGeneratorResult/AP_1066__emp_{empNo}_patch', './apiSpecGeneratorResult/AP_1067__emp_{projectCd}_{siteId}_{companyNo}_{userNo}_get', './apiSpecGeneratorResult/AP_1068__user_get', './apiSpecGeneratorResult/AP_1070__user_delete', './apiSpecGeneratorResult/AP_1071__user_patch', './apiSpecGeneratorResult/AP_1072__user_detail_post', './apiSpecGeneratorResult/AP_1073__user_detail_delete', './apiSpecGeneratorResult/AP_1074__user_detail_patch', './apiSpecGeneratorResult/AP_1075__user_detail-sub_put', './apiSpecGeneratorResult/AP_1076__user_detail-sub_post', './apiSpecGeneratorResult/AP_1077__user_detail-sub_patch', './apiSpecGeneratorResult/AP_1078__user_detail-sub_{userDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1079__user_detail-sub_{userDetailSubSeq}_patch', './apiSpecGeneratorResult/AP_1080__user_duplication_{userId}_get', './apiSpecGeneratorResult/AP_1081__user_me_get', './apiSpecGeneratorResult/AP_1083__user_service_duplication_{userId}_{siteId}_get', './apiSpecGeneratorResult/AP_1085__user_site_post', './apiSpecGeneratorResult/AP_1086__user_site_delete', './apiSpecGeneratorResult/AP_1087__user_site-part_post', './apiSpecGeneratorResult/AP_1088__user_site-part_{siteUserPartNo}_patch', './apiSpecGeneratorResult/AP_1090__user_site_{projectCd}_{siteId}_patch', './apiSpecGeneratorResult/AP_1092__user_site_{siteUserNo}_patch', './apiSpecGeneratorResult/AP_1093__user_{userNo}_get']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  survey2-api.json
 apiSubCnt:  111
-errReqCnt:  40
-errReqPercent:  36.03603603603604
-errResCnt:  63
-errResPercent:  56.75675675675676
-errReqList:  ['./apiSpecGeneratorResult/AP_1094__admin_qna_post', './apiSpecGeneratorResult/AP_1095__admin_qna_patch', './apiSpecGeneratorResult/AP_1097__admin_qna_answer_post', './apiSpecGeneratorResult/AP_1098__admin_qna_answer_patch', './apiSpecGeneratorResult/AP_1101__admin_qna_question_post', './apiSpecGeneratorResult/AP_1102__admin_qna_question_patch', './apiSpecGeneratorResult/AP_1104__admin_section_post', './apiSpecGeneratorResult/AP_1105__admin_section_patch', './apiSpecGeneratorResult/AP_1108__admin_survey_post', './apiSpecGeneratorResult/AP_1109__admin_survey_patch', './apiSpecGeneratorResult/AP_1111__multi_submit_post', './apiSpecGeneratorResult/AP_1112__multi_submit_patch', './apiSpecGeneratorResult/AP_1117__submit_post', './apiSpecGeneratorResult/AP_1118__submit_patch', './apiSpecGeneratorResult/AP_1125__tb_answer_post', './apiSpecGeneratorResult/AP_1126__tb_answer_patch', './apiSpecGeneratorResult/AP_1128__tb_answer_detail_post', './apiSpecGeneratorResult/AP_1129__tb_answer_detail_patch', './apiSpecGeneratorResult/AP_1137__tb_attach_post', './apiSpecGeneratorResult/AP_1138__tb_attach_patch', './apiSpecGeneratorResult/AP_1145__tb_question_post', './apiSpecGeneratorResult/AP_1146__tb_question_patch', './apiSpecGeneratorResult/AP_1148__tb_question_detail_post', './apiSpecGeneratorResult/AP_1149__tb_question_detail_patch', './apiSpecGeneratorResult/AP_1157__tb_record_post', './apiSpecGeneratorResult/AP_1158__tb_record_patch', './apiSpecGeneratorResult/AP_1164__tb_section_post', './apiSpecGeneratorResult/AP_1165__tb_section_patch', './apiSpecGeneratorResult/AP_1167__tb_section_detail_post', './apiSpecGeneratorResult/AP_1168__tb_section_detail_patch', './apiSpecGeneratorResult/AP_1176__tb_submit_post', './apiSpecGeneratorResult/AP_1177__tb_submit_patch', './apiSpecGeneratorResult/AP_1179__tb_submit_detail_post', './apiSpecGeneratorResult/AP_1180__tb_submit_detail_patch', './apiSpecGeneratorResult/AP_1185__tb_submit_score_post', './apiSpecGeneratorResult/AP_1186__tb_submit_score_patch', './apiSpecGeneratorResult/AP_1194__tb_survey_post', './apiSpecGeneratorResult/AP_1195__tb_survey_patch', './apiSpecGeneratorResult/AP_1197__tb_survey_detail_post', './apiSpecGeneratorResult/AP_1198__tb_survey_detail_patch']
-errResList:  ['./apiSpecGeneratorResult/AP_1095__admin_qna_patch', './apiSpecGeneratorResult/AP_1098__admin_qna_answer_patch', './apiSpecGeneratorResult/AP_1099__admin_qna_answer_{answerNo}_delete', './apiSpecGeneratorResult/AP_1102__admin_qna_question_patch', './apiSpecGeneratorResult/AP_1103__admin_qna_{questionNo}_delete', './apiSpecGeneratorResult/AP_1105__admin_section_patch', './apiSpecGeneratorResult/AP_1107__admin_section_{sectionNo}_delete', './apiSpecGeneratorResult/AP_1109__admin_survey_patch', './apiSpecGeneratorResult/AP_1110__admin_survey_{surveyNo}_delete', './apiSpecGeneratorResult/AP_1119__submit_{submitNo}_delete', './apiSpecGeneratorResult/AP_1125__tb_answer_post', './apiSpecGeneratorResult/AP_1126__tb_answer_patch', './apiSpecGeneratorResult/AP_1128__tb_answer_detail_post', './apiSpecGeneratorResult/AP_1129__tb_answer_detail_patch', './apiSpecGeneratorResult/AP_1131__tb_answer_detail_{answerDetailNo}_delete', './apiSpecGeneratorResult/AP_1132__tb_answer_detail_{userNo}_{answerDetailNo}_delete', './apiSpecGeneratorResult/AP_1134__tb_answer_{answerNo}_delete', './apiSpecGeneratorResult/AP_1135__tb_answer_{userNo}_{answerNo}_delete', './apiSpecGeneratorResult/AP_1138__tb_attach_patch', './apiSpecGeneratorResult/AP_1139__tb_attach_download_{attachGrpCd}_get', './apiSpecGeneratorResult/AP_1140__tb_attach_download_{projectCd}_{siteId}_{attachGrpCd}_get', './apiSpecGeneratorResult/AP_1142__tb_attach_{attachGrpCd}_delete', './apiSpecGeneratorResult/AP_1143__tb_attach_{userNo}_{attachGrpCd}_delete', './apiSpecGeneratorResult/AP_1145__tb_question_post', './apiSpecGeneratorResult/AP_1146__tb_question_patch', './apiSpecGeneratorResult/AP_1148__tb_question_detail_post', './apiSpecGeneratorResult/AP_1149__tb_question_detail_patch', './apiSpecGeneratorResult/AP_1151__tb_question_detail_{questionDetailNo}_delete', './apiSpecGeneratorResult/AP_1152__tb_question_detail_{userNo}_{questionDetailNo}_delete', './apiSpecGeneratorResult/AP_1154__tb_question_{questionNo}_delete', './apiSpecGeneratorResult/AP_1155__tb_question_{userNo}_{questionNo}_delete', './apiSpecGeneratorResult/AP_1157__tb_record_post', './apiSpecGeneratorResult/AP_1158__tb_record_patch', './apiSpecGeneratorResult/AP_1160__tb_record_{recordNo}_delete', './apiSpecGeneratorResult/AP_1162__tb_record_{userNo}_{recordNo}_delete', './apiSpecGeneratorResult/AP_1164__tb_section_post', './apiSpecGeneratorResult/AP_1165__tb_section_patch', './apiSpecGeneratorResult/AP_1167__tb_section_detail_post', './apiSpecGeneratorResult/AP_1168__tb_section_detail_patch', './apiSpecGeneratorResult/AP_1170__tb_section_detail_{sectionDetailNo}_delete', './apiSpecGeneratorResult/AP_1171__tb_section_detail_{userNo}_{sectionDetailNo}_delete', './apiSpecGeneratorResult/AP_1173__tb_section_{sectionNo}_delete', './apiSpecGeneratorResult/AP_1174__tb_section_{userNo}_{sectionNo}_delete', './apiSpecGeneratorResult/AP_1176__tb_submit_post', './apiSpecGeneratorResult/AP_1177__tb_submit_patch', './apiSpecGeneratorResult/AP_1179__tb_submit_detail_post', './apiSpecGeneratorResult/AP_1180__tb_submit_detail_patch', './apiSpecGeneratorResult/AP_1182__tb_submit_detail_{submitDetailNo}_delete', './apiSpecGeneratorResult/AP_1183__tb_submit_detail_{userNo}_{submitDetailNo}_delete', './apiSpecGeneratorResult/AP_1185__tb_submit_score_post', './apiSpecGeneratorResult/AP_1186__tb_submit_score_patch', './apiSpecGeneratorResult/AP_1188__tb_submit_score_{scoreNo}_delete', './apiSpecGeneratorResult/AP_1189__tb_submit_score_{userNo}_{scoreNo}_delete', './apiSpecGeneratorResult/AP_1191__tb_submit_{submitNo}_delete', './apiSpecGeneratorResult/AP_1192__tb_submit_{userNo}_{submitNo}_delete', './apiSpecGeneratorResult/AP_1194__tb_survey_post', './apiSpecGeneratorResult/AP_1195__tb_survey_patch', './apiSpecGeneratorResult/AP_1197__tb_survey_detail_post', './apiSpecGeneratorResult/AP_1198__tb_survey_detail_patch', './apiSpecGeneratorResult/AP_1200__tb_survey_detail_{surveyDetailNo}_delete', './apiSpecGeneratorResult/AP_1201__tb_survey_detail_{userNo}_{surveyDetailNo}_delete', './apiSpecGeneratorResult/AP_1203__tb_survey_{surveyNo}_delete', './apiSpecGeneratorResult/AP_1204__tb_survey_{userNo}_{surveyNo}_delete']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
 file_name:  user-api.json
 apiSubCnt:  107
-errReqCnt:  44
-errReqPercent:  41.1214953271028
-errResCnt:  86
-errResPercent:  80.37383177570094
-errReqList:  ['./apiSpecGeneratorResult/AP_1206__admin_company_post', './apiSpecGeneratorResult/AP_1207__admin_company_detail_post', './apiSpecGeneratorResult/AP_1208__admin_company_detail_patch', './apiSpecGeneratorResult/AP_1209__admin_company_detail-sub_post', './apiSpecGeneratorResult/AP_1210__admin_company_detail-sub_patch', './apiSpecGeneratorResult/AP_1217__admin_emp_post', './apiSpecGeneratorResult/AP_1218__admin_emp_detail_post', './apiSpecGeneratorResult/AP_1219__admin_emp_detail_patch', './apiSpecGeneratorResult/AP_1220__admin_emp_detail-sub_post', './apiSpecGeneratorResult/AP_1221__admin_emp_detail-sub_patch', './apiSpecGeneratorResult/AP_1228__admin_user_post', './apiSpecGeneratorResult/AP_1230__admin_user_detail_post', './apiSpecGeneratorResult/AP_1231__admin_user_detail_patch', './apiSpecGeneratorResult/AP_1232__admin_user_detail-sub_post', './apiSpecGeneratorResult/AP_1233__admin_user_detail-sub_patch', './apiSpecGeneratorResult/AP_1237__admin_user_site_post', './apiSpecGeneratorResult/AP_1238__admin_user_site-part_post', './apiSpecGeneratorResult/AP_1247__company_post', './apiSpecGeneratorResult/AP_1248__company_detail_post', './apiSpecGeneratorResult/AP_1249__company_detail_patch', './apiSpecGeneratorResult/AP_1251__company_detail-sub_put', './apiSpecGeneratorResult/AP_1252__company_detail-sub_post', './apiSpecGeneratorResult/AP_1253__company_detail-sub_patch', './apiSpecGeneratorResult/AP_1257__company_site_post', './apiSpecGeneratorResult/AP_1268__emp_post', './apiSpecGeneratorResult/AP_1269__emp_detail_post', './apiSpecGeneratorResult/AP_1270__emp_detail_patch', './apiSpecGeneratorResult/AP_1271__emp_detail-sub_post', './apiSpecGeneratorResult/AP_1272__emp_detail-sub_patch', './apiSpecGeneratorResult/AP_1280__siteUserInvite_post', './apiSpecGeneratorResult/AP_1282__siteUserInvite_token_post', './apiSpecGeneratorResult/AP_1287__user_post', './apiSpecGeneratorResult/AP_1288__user_delete', './apiSpecGeneratorResult/AP_1289__user_patch', './apiSpecGeneratorResult/AP_1290__user_detail_post', './apiSpecGeneratorResult/AP_1292__user_detail_patch', './apiSpecGeneratorResult/AP_1293__user_detail-sub_put', './apiSpecGeneratorResult/AP_1294__user_detail-sub_post', './apiSpecGeneratorResult/AP_1295__user_detail-sub_patch', './apiSpecGeneratorResult/AP_1300__user_service_post', './apiSpecGeneratorResult/AP_1303__user_site_post', './apiSpecGeneratorResult/AP_1304__user_site_delete', './apiSpecGeneratorResult/AP_1305__user_site-part_post', './apiSpecGeneratorResult/AP_1307__user_site_find_post']
-errResList:  ['./apiSpecGeneratorResult/AP_1206__admin_company_post', './apiSpecGeneratorResult/AP_1207__admin_company_detail_post', './apiSpecGeneratorResult/AP_1208__admin_company_detail_patch', './apiSpecGeneratorResult/AP_1209__admin_company_detail-sub_post', './apiSpecGeneratorResult/AP_1210__admin_company_detail-sub_patch', './apiSpecGeneratorResult/AP_1211__admin_company_detail-sub_{companyDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1212__admin_company_detail_{companyNo}_delete', './apiSpecGeneratorResult/AP_1214__admin_company_{companyNo}_delete', './apiSpecGeneratorResult/AP_1215__admin_company_{companyNo}_patch', './apiSpecGeneratorResult/AP_1217__admin_emp_post', './apiSpecGeneratorResult/AP_1218__admin_emp_detail_post', './apiSpecGeneratorResult/AP_1219__admin_emp_detail_patch', './apiSpecGeneratorResult/AP_1220__admin_emp_detail-sub_post', './apiSpecGeneratorResult/AP_1221__admin_emp_detail-sub_patch', './apiSpecGeneratorResult/AP_1222__admin_emp_detail-sub_{empDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1223__admin_emp_detail_{empNo}_delete', './apiSpecGeneratorResult/AP_1225__admin_emp_{empNo}_delete', './apiSpecGeneratorResult/AP_1226__admin_emp_{empNo}_patch', './apiSpecGeneratorResult/AP_1228__admin_user_post', './apiSpecGeneratorResult/AP_1229__admin_user_company_get', './apiSpecGeneratorResult/AP_1230__admin_user_detail_post', './apiSpecGeneratorResult/AP_1231__admin_user_detail_patch', './apiSpecGeneratorResult/AP_1232__admin_user_detail-sub_post', './apiSpecGeneratorResult/AP_1233__admin_user_detail-sub_patch', './apiSpecGeneratorResult/AP_1234__admin_user_detail-sub_{userDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1235__admin_user_detail_{userNo}_delete', './apiSpecGeneratorResult/AP_1237__admin_user_site_post', './apiSpecGeneratorResult/AP_1238__admin_user_site-part_post', './apiSpecGeneratorResult/AP_1239__admin_user_site-part_{siteUserNo}_patch', './apiSpecGeneratorResult/AP_1240__admin_user_site-part_{siteUserPartNo}_patch', './apiSpecGeneratorResult/AP_1241__admin_user_site_{siteUserNo}_delete', './apiSpecGeneratorResult/AP_1242__admin_user_site_{siteUserNo}_patch', './apiSpecGeneratorResult/AP_1244__admin_user_{userNo}_delete', './apiSpecGeneratorResult/AP_1245__admin_user_{userNo}_patch', './apiSpecGeneratorResult/AP_1248__company_detail_post', './apiSpecGeneratorResult/AP_1249__company_detail_patch', './apiSpecGeneratorResult/AP_1250__company_detail-sub_get', './apiSpecGeneratorResult/AP_1251__company_detail-sub_put', './apiSpecGeneratorResult/AP_1252__company_detail-sub_post', './apiSpecGeneratorResult/AP_1253__company_detail-sub_patch', './apiSpecGeneratorResult/AP_1254__company_detail-sub_{companyDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1255__company_detail_{companyNo}_delete', './apiSpecGeneratorResult/AP_1257__company_site_post', './apiSpecGeneratorResult/AP_1258__company_site_detail_{siteCompanyNo}_post', './apiSpecGeneratorResult/AP_1259__company_site_detail_{siteCompanyNo}_delete', './apiSpecGeneratorResult/AP_1260__company_site_detail_{siteCompanyNo}_patch', './apiSpecGeneratorResult/AP_1262__company_site_{siteCompanyNo}_delete', './apiSpecGeneratorResult/AP_1263__company_site_{siteCompanyNo}_patch', './apiSpecGeneratorResult/AP_1265__company_{companyNo}_delete', './apiSpecGeneratorResult/AP_1266__company_{companyNo}_patch', './apiSpecGeneratorResult/AP_1267__emp_get', './apiSpecGeneratorResult/AP_1269__emp_detail_post', './apiSpecGeneratorResult/AP_1270__emp_detail_patch', './apiSpecGeneratorResult/AP_1271__emp_detail-sub_post', './apiSpecGeneratorResult/AP_1272__emp_detail-sub_patch', './apiSpecGeneratorResult/AP_1273__emp_detail-sub_{empDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1274__emp_detail_{empNo}_delete', './apiSpecGeneratorResult/AP_1275__emp_{empNo}_get', './apiSpecGeneratorResult/AP_1276__emp_{empNo}_delete', './apiSpecGeneratorResult/AP_1277__emp_{empNo}_patch', './apiSpecGeneratorResult/AP_1278__emp_{projectCd}_{siteId}_{companyNo}_{userNo}_get', './apiSpecGeneratorResult/AP_1280__siteUserInvite_post', './apiSpecGeneratorResult/AP_1282__siteUserInvite_token_post', './apiSpecGeneratorResult/AP_1284__siteUserInvite_{invtNo}_delete', './apiSpecGeneratorResult/AP_1285__siteUserInvite_{invtNo}_patch', './apiSpecGeneratorResult/AP_1286__user_get', './apiSpecGeneratorResult/AP_1288__user_delete', './apiSpecGeneratorResult/AP_1289__user_patch', './apiSpecGeneratorResult/AP_1290__user_detail_post', './apiSpecGeneratorResult/AP_1291__user_detail_delete', './apiSpecGeneratorResult/AP_1292__user_detail_patch', './apiSpecGeneratorResult/AP_1293__user_detail-sub_put', './apiSpecGeneratorResult/AP_1294__user_detail-sub_post', './apiSpecGeneratorResult/AP_1295__user_detail-sub_patch', './apiSpecGeneratorResult/AP_1296__user_detail-sub_{userDetailSubSeq}_delete', './apiSpecGeneratorResult/AP_1297__user_detail-sub_{userDetailSubSeq}_patch', './apiSpecGeneratorResult/AP_1298__user_duplication_{userId}_get', './apiSpecGeneratorResult/AP_1299__user_me_get', './apiSpecGeneratorResult/AP_1301__user_service_duplication_{userId}_{siteId}_get', './apiSpecGeneratorResult/AP_1303__user_site_post', './apiSpecGeneratorResult/AP_1304__user_site_delete', './apiSpecGeneratorResult/AP_1305__user_site-part_post', './apiSpecGeneratorResult/AP_1306__user_site-part_{siteUserPartNo}_patch', './apiSpecGeneratorResult/AP_1308__user_site_{projectCd}_{siteId}_patch', './apiSpecGeneratorResult/AP_1310__user_site_{siteUserNo}_patch', './apiSpecGeneratorResult/AP_1311__user_{userNo}_get']
+errReqCnt:  0
+errReqPercent:  0.0
+errResCnt:  0
+errResPercent:  0.0
+errReqList:  []
+errResList:  []
 --------------------------------------------------
-totalErrReqCnt:  563
-totalErrResCnt:  675
+totalErrReqCnt:  0
+totalErrResCnt:  0
