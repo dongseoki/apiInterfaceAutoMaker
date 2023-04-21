@@ -128,10 +128,13 @@ def printApiSpec(relPath, fileName):
             apiName = getApiName(apiDatas, key, apiMN)
             apiDesc = getApiDesc(apiDatas, key, apiMN)
             print('{}\t{}\t{}\t{}\t{}'.format(fileName.split('.')[0], apiName, apiMN, apiDesc, key))
-
+            print('api spec begin')
             try:
-                print('api spec begin')
                 printRequestParameter(key, apiMN, apiDatas)
+            except:
+                print ('api spec request error occured', apiName, key)
+            
+            try:
                 for statusCode in apiDatas[key][apiMN]['responses'].keys():
                     if statusCode not in ['401', '404', '400', '500']:
                         print('uri: {}, method: {}, stCode: {}, respone REsult begin'.format(key, apiMN, statusCode))
@@ -141,7 +144,7 @@ def printApiSpec(relPath, fileName):
 
                 print('api spec end')
             except:
-                print ('api spec error occured', apiName, key)
+                print ('api spec response result error occured', apiName, key)
             print()
             print('-'* 50)
             print()
