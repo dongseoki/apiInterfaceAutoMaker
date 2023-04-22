@@ -19,8 +19,8 @@ def parseSchemaPath(refValue):
 
 
 def printRequestParameter(uri, apiMN, apiDatas, schValDic):
-    print()
-    print('request parameter print begin : {} {}'.format(uri, apiMN))
+    # print()
+    # print('request parameter print begin : {} {}'.format(uri, apiMN))
     if 'parameters' in apiDatas[uri][apiMN]:
         for paramItem in apiDatas[uri][apiMN]['parameters']:
             try:
@@ -52,13 +52,14 @@ def printRequestParameter(uri, apiMN, apiDatas, schValDic):
             printResponseByDepth({
                 '$ref': schemaRealValDit['$ref']
             }, schValDic)
-    print('request parameter print end : {} {}'.format(uri, apiMN))
-    print()
+    # print('request parameter print end : {} {}'.format(uri, apiMN))
+    # print()
 
 
 # schValDic
 def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
     if depth >= 7:
+        print('depth is too deep')
         return
     # schValDic
     # ex)
