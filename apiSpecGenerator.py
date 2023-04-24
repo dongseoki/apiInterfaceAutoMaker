@@ -180,6 +180,8 @@ def printApiSpec(relPath, fileName):
         for apiMN in apiMethodList:
             fileToErrorDic[file_name]['apiSubCnt'] += 1
             global apNum
+            if (apNum == 451):
+                apNum += 10
             createDirectory = makeAPSpecDirPath(uri, apiMN)
             if not os.path.exists(createDirectory):
                 os.makedirs(createDirectory)
@@ -246,8 +248,6 @@ file_list = ['common-api.json',
              'contents-api.json',
              'counseling-api.json',
              'coupon-api.json',
-             'goods-api.json',
-             'inquiry-api.json',
              'logging-api.json',
              'login2-api.json',
              'mailing-api.json',
@@ -270,7 +270,9 @@ file_list = ['common-api.json',
              'statistics-api.json',
              'subscribe-api.json',
              'survey2-api.json',
-             'user-api.json']
+             'user-api.json',
+             'goods-api.json',
+             'inquiry-api.json']
 global fileToErrorDic
 fileToErrorDic = {}
 

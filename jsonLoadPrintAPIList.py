@@ -31,6 +31,40 @@ def printAPIInterface(relPath, fileName):
 
 
 relPath = './jsonDatas'
-file_list = os.listdir(relPath)
+# file_list = os.listdir(relPath)
+file_list = ['common-api.json',
+             'banner-api.json',
+             'board-api.json',
+             'category-api.json',
+             'common-api2.json',
+             'consulting-api.json',
+             'contents-api.json',
+             'counseling-api.json',
+             'coupon-api.json',
+             'logging-api.json',
+             'login2-api.json',
+             'mailing-api.json',
+             'mavatar-api.json',
+             'mbody-api.json',
+             'mcloth-api.json',
+             'mface-api.json',
+             'mhair-api.json',
+             'micecontents-api.json',
+             'mregion-api.json',
+             'mshoes-api.json',
+             'mypage-api.json',
+             'order-api.json',
+             'popup-api.json',
+             'projectinfo-api.json',
+             'projectinfo2-api.json',
+             'quiz-api.json',
+             'session-api.json',
+             'stat2-api.json',
+             'statistics-api.json',
+             'subscribe-api.json',
+             'survey2-api.json',
+             'user-api.json',
+             'goods-api.json',
+             'inquiry-api.json']
 for file_name in file_list:
     printAPIInterface(relPath, file_name)
