@@ -55,9 +55,33 @@ def printRequestParameter(uri, apiMN, apiDatas, schValDic):
     # print('request parameter print end : {} {}'.format(uri, apiMN))
     # print()
 
+def processPrintResponseRow(responseValDict, schValDic, element, depth):
+    if depth >= 7:
+        print('depth is too deep')
+        return
+    if 'type' in responseValDict:
+        dataType = responseValDict['type']
+    elif '$ref' in responseValDict:
+        dataType = 'object'
+    else:
+        dataType = '_'
+    if 'description' in responseValDict:
+        description = responseValDict['description']
+    else:
+        description = '_'
+    printByDepth(element, dataType, description, depth+1)
+    if 'items' in responseValDict:
+        if '$ref' in responseValDict['items']:
+            printResponseByDepth({
+                '$ref': responseValDict['items']['$ref']
+            }, schValDic, depth+1)
+    if '$ref' in responseValDict:
+        printResponseByDepth({
+            '$ref': responseValDict['$ref']
+        }, schValDic, depth+1)
 
 # schValDic
-def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
+def printResponseByDepth(responseValDict, schValDic, depth=0):
     if depth >= 7:
         print('depth is too deep')
         return
@@ -88,40 +112,25 @@ def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
     #     'nullable': True,
     #     'example': 'BLC004'},
     #    'imgPath': {'type': 'string',
-    if '$ref' not in refKeyOnlyDict:
-        return
-    refValue = refKeyOnlyDict['$ref']  # '#/components/schemas/ErrorResponse'
-    schName = parseSchemaPath(refValue)
-    schVal = schValDic[schName]
+    if 'items' in responseValDict:
+        processPrintResponseRow(responseValDict, schValDic, '', depth+1)
+    if '$ref' in responseValDict:
+        refValue = responseValDict['$ref']  # '#/components/schemas/ErrorResponse'
+        schName = parseSchemaPath(refValue)
+        schVal = schValDic[schName]
+        if 'properties' in schVal:
+            for propertyName in schVal['properties'].keys():
+                propertyValueDict = schVal['properties'][propertyName]
+                element = propertyName
+                processPrintResponseRow(responseValDict, schValDic, element, depth+1)
+
     # schVal ex
     # {'type': 'object',
 #   'properties': {'httpStatus': {'type': 'integer', 'format': 'int32'},
 #    'errorMessage': {'type': 'string'},
 #    'detailMessage': {'type': 'string'},
     # }
-    for propertyName in schVal['properties'].keys():
-        propertyValueDict = schVal['properties'][propertyName]
-        element = propertyName
-        if 'type' in propertyValueDict:
-            dataType = propertyValueDict['type']
-        elif '$ref' in propertyValueDict:
-            dataType = 'Object'
-        else:
-            dataType = '_'
-        if 'description' in propertyValueDict:
-            description = propertyValueDict['description']
-        else:
-            description = '_'
-        printByDepth(element, dataType, description, depth)
-        if 'items' in propertyValueDict:
-            if '$ref' in propertyValueDict['items']:
-                printResponseByDepth({
-                    '$ref': propertyValueDict['items']['$ref']
-                }, schValDic, depth+1)
-        if '$ref' in propertyValueDict:
-            printResponseByDepth({
-                '$ref': propertyValueDict['$ref']
-            }, schValDic, depth+1)
+
 
 
 def getApiMethods(apiDatas, key):
@@ -144,14 +153,14 @@ def getApiDesc(apiDatas, key, apiMN):
         return ''
 
 
-def replaceWithUnder(value):
-    return value.replace('/', '_')
+def replaceWithDirectoryName(value):
+    return value.replace('/', '_').replace('*', '+')
 
 
 def makeAPSpecDirPath(uri, apiMN):
     global apNum
     path = './apiSpecGeneratorResult/' + 'AP_' + \
-        str(apNum).zfill(3) + '_' + replaceWithUnder(uri) + '_' + apiMN
+        str(apNum).zfill(3) + '_' + replaceWithDirectoryName(uri) + '_' + apiMN
     return path
 
 
@@ -180,14 +189,14 @@ def printApiSpec(relPath, fileName):
             apiName = getApiName(apiDatas, key, apiMN)
             apiDesc = getApiDesc(apiDatas, key, apiMN)
             original_stdout = sys.stdout
-            with open(createDirectory + '/api_meta_info.txt', 'w') as f:
+            with open(createDirectory + '/api_meta_info.txt', 'w', encoding='utf8') as f:
                 # Change the standard output to the file we created.
                 sys.stdout = f
                 printAPIMeta(fileName, apiName, apiMN, apiDesc, key)
                 sys.stdout = original_stdout  # Reset the standard output to its original value
             # print('api spec begin')
             original_stdout = sys.stdout
-            with open(createDirectory + '/api_request_parameter.txt', 'w') as f:
+            with open(createDirectory + '/api_request_parameter.txt', 'w', encoding='utf8') as f:
                 # Change the standard output to the file we created.
                 sys.stdout = f
                 try:
@@ -200,7 +209,7 @@ def printApiSpec(relPath, fileName):
                     fileToErrorDic[file_name]['errReqList'].append(
                         createDirectory)
                 sys.stdout = original_stdout  # Reset the standard output to its original value
-            with open(createDirectory + '/api_response_parameter.txt', 'w') as f:
+            with open(createDirectory + '/api_response_parameter.txt', 'w', encoding='utf8') as f:
                 # Change the standard output to the file we created.
                 sys.stdout = f
                 try:
@@ -266,9 +275,9 @@ file_list = ['common-api.json',
 global fileToErrorDic
 fileToErrorDic = {}
 
-# dir = './apiSpecGeneratorResult'
-# for f in os.listdir(dir):
-#     os.remove(os.path.join(dir, f))
+dir = './apiSpecGeneratorResult'
+for f in os.listdir(dir):
+    os.remove(os.path.join(dir, f))
 
 for file_name in file_list:
     fileToErrorDic[file_name] = {
