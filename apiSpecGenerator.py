@@ -88,40 +88,48 @@ def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
     #     'nullable': True,
     #     'example': 'BLC004'},
     #    'imgPath': {'type': 'string',
-    if '$ref' not in refKeyOnlyDict:
-        return
-    refValue = refKeyOnlyDict['$ref']  # '#/components/schemas/ErrorResponse'
-    schName = parseSchemaPath(refValue)
-    schVal = schValDic[schName]
+    if '$ref' in refKeyOnlyDict:
+        refValue = refKeyOnlyDict['$ref']  # '#/components/schemas/ErrorResponse'
+        schName = parseSchemaPath(refValue)
+        schVal = schValDic[schName]
+        if 'properties' in schVal:
+            for propertyName in schVal['properties'].keys():
+                propertyValueDict = schVal['properties'][propertyName]
+                element = propertyName
+                if 'type' in propertyValueDict:
+                    dataType = propertyValueDict['type']
+                elif '$ref' in propertyValueDict:
+                    dataType = 'Object'
+                else:
+                    dataType = '_'
+                if 'description' in propertyValueDict:
+                    description = propertyValueDict['description']
+                else:
+                    description = '_'
+                printByDepth(element, dataType, description, depth)
+                if 'items' in propertyValueDict:
+                    if '$ref' in propertyValueDict['items']:
+                        printResponseByDepth({
+                            '$ref': propertyValueDict['items']['$ref']
+                        }, schValDic, depth+1)
+                if '$ref' in propertyValueDict:
+                    printResponseByDepth({
+                        '$ref': propertyValueDict['$ref']
+                    }, schValDic, depth+1)
+    if 'items' in refKeyOnlyDict:
+        dataType = 'array'
+        printByDepth('_', dataType, '_', depth)
+        if '$ref' in refKeyOnlyDict['items']:
+            printResponseByDepth({
+                '$ref': refKeyOnlyDict['items']['$ref']
+            }, schValDic, depth+1)
+        return;
     # schVal ex
     # {'type': 'object',
 #   'properties': {'httpStatus': {'type': 'integer', 'format': 'int32'},
 #    'errorMessage': {'type': 'string'},
 #    'detailMessage': {'type': 'string'},
     # }
-    for propertyName in schVal['properties'].keys():
-        propertyValueDict = schVal['properties'][propertyName]
-        element = propertyName
-        if 'type' in propertyValueDict:
-            dataType = propertyValueDict['type']
-        elif '$ref' in propertyValueDict:
-            dataType = 'Object'
-        else:
-            dataType = '_'
-        if 'description' in propertyValueDict:
-            description = propertyValueDict['description']
-        else:
-            description = '_'
-        printByDepth(element, dataType, description, depth)
-        if 'items' in propertyValueDict:
-            if '$ref' in propertyValueDict['items']:
-                printResponseByDepth({
-                    '$ref': propertyValueDict['items']['$ref']
-                }, schValDic, depth+1)
-        if '$ref' in propertyValueDict:
-            printResponseByDepth({
-                '$ref': propertyValueDict['$ref']
-            }, schValDic, depth+1)
 
 
 def getApiMethods(apiDatas, key):
@@ -145,7 +153,7 @@ def getApiDesc(apiDatas, key, apiMN):
 
 
 def replaceWithUnder(value):
-    return value.replace('/', '_')
+    return value.replace('/', '_').replace('*', '+')
 
 
 def makeAPSpecDirPath(uri, apiMN):
@@ -180,14 +188,14 @@ def printApiSpec(relPath, fileName):
             apiName = getApiName(apiDatas, key, apiMN)
             apiDesc = getApiDesc(apiDatas, key, apiMN)
             original_stdout = sys.stdout
-            with open(createDirectory + '/api_meta_info.txt', 'w') as f:
+            with open(createDirectory + '/api_meta_info.txt', 'w', encoding='utf8') as f:
                 # Change the standard output to the file we created.
                 sys.stdout = f
                 printAPIMeta(fileName, apiName, apiMN, apiDesc, key)
                 sys.stdout = original_stdout  # Reset the standard output to its original value
             # print('api spec begin')
             original_stdout = sys.stdout
-            with open(createDirectory + '/api_request_parameter.txt', 'w') as f:
+            with open(createDirectory + '/api_request_parameter.txt', 'w', encoding='utf8') as f:
                 # Change the standard output to the file we created.
                 sys.stdout = f
                 try:
@@ -200,7 +208,7 @@ def printApiSpec(relPath, fileName):
                     fileToErrorDic[file_name]['errReqList'].append(
                         createDirectory)
                 sys.stdout = original_stdout  # Reset the standard output to its original value
-            with open(createDirectory + '/api_response_parameter.txt', 'w') as f:
+            with open(createDirectory + '/api_response_parameter.txt', 'w', encoding='utf8') as f:
                 # Change the standard output to the file we created.
                 sys.stdout = f
                 try:
