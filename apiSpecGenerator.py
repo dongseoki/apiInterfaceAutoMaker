@@ -2,14 +2,19 @@ import json
 import os
 import sys
 import traceback
+import copy
 
 global apNum
 apNum = 1
 
 
-def printByDepth(element, dataType, description, depth):
+def printByDepth(element, dataType, description, required, isItResponse, depth):
     priDepth = '    ' * depth + ' - '
-    priVal = '{}\t{}\t{}\t{}'.format(element, dataType, 'O', description)
+    if isItResponse:
+        reqValue = '_'
+    else:
+        reqValue = 'O' if required else 'X'
+    priVal = '{}\t{}\t{}\t{}'.format(element, dataType, reqValue, description)
     print(priDepth + priVal)
 
 
@@ -47,17 +52,17 @@ def printRequestParameter(uri, apiMN, apiDatas, schValDic):
             if '$ref' in schemaRealValDit['items']:
                 printResponseByDepth({
                     '$ref': schemaRealValDit['items']['$ref']
-                }, schValDic)
+                }, schValDic, set(), False)
         if '$ref' in schemaRealValDit:
             printResponseByDepth({
                 '$ref': schemaRealValDit['$ref']
-            }, schValDic)
+            }, schValDic, set(), False)
     # print('request parameter print end : {} {}'.format(uri, apiMN))
     # print()
 
 
 # schValDic
-def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
+def printResponseByDepth(refKeyOnlyDict, schValDic, printPropertySet, isItResponse, depth=0):
     if depth >= 7:
         print('depth is too deep')
         return
@@ -106,23 +111,41 @@ def printResponseByDepth(refKeyOnlyDict, schValDic, depth=0):
                     description = propertyValueDict['description']
                 else:
                     description = '_'
-                printByDepth(element, dataType, description, depth)
+                if element in printPropertySet:
+                    continue
+                if 'required' in schVal and propertyName in schVal['required'] :
+                    required = True
+                else:
+                    required = False
+                # if 'required' in propertyValueDict and propertyValueDict['required'] == True:
+                #     required = True
+                # else:
+                #     required = False
+                printByDepth(element, dataType, description, required, isItResponse, depth)
                 if 'items' in propertyValueDict:
                     if '$ref' in propertyValueDict['items']:
+                        nextSet = copy.deepcopy(printPropertySet)
+                        nextSet.add(element)
                         printResponseByDepth({
                             '$ref': propertyValueDict['items']['$ref']
-                        }, schValDic, depth+1)
+                        }, schValDic, nextSet, isItResponse, depth+1)
                 if '$ref' in propertyValueDict:
+                    nextSet = copy.deepcopy(printPropertySet)
+                    nextSet.add(element)
                     printResponseByDepth({
                         '$ref': propertyValueDict['$ref']
-                    }, schValDic, depth+1)
+                    }, schValDic,nextSet, isItResponse, depth+1)
     if 'items' in refKeyOnlyDict:
         dataType = 'array'
-        printByDepth('_', dataType, '_', depth)
+        if 'required' in refKeyOnlyDict and refKeyOnlyDict['required'] == True:
+            required = True
+        else:
+            required = False
+        printByDepth('_', dataType, '_',required, isItResponse, depth)
         if '$ref' in refKeyOnlyDict['items']:
             printResponseByDepth({
                 '$ref': refKeyOnlyDict['items']['$ref']
-            }, schValDic, depth+1)
+            }, schValDic, copy.deepcopy(printPropertySet), isItResponse, depth+1)
         return;
     # schVal ex
     # {'type': 'object',
@@ -165,7 +188,7 @@ def makeAPSpecDirPath(uri, apiMN):
 
 def printAPIMeta(fileName, apiName, apiMN, apiDesc, key):
     print('{}\n{}\n{}\n{}\n{}'.format(
-        fileName.split('.')[0], apiName, apiMN, apiDesc, key))
+        fileName.split('.')[0], apiName, apiMN.upper(), apiDesc, key))
 
 
 def printApiSpec(relPath, fileName):
@@ -220,7 +243,8 @@ def printApiSpec(relPath, fileName):
                                 key, apiMN, statusCode))
                             if 'content' in apiDatas[key][apiMN]['responses'][statusCode]:
                                 printResponseByDepth(apiDatas[key][apiMN]['responses'][statusCode]['content']['application/json']['schema'],
-                                                     data['components']['schemas'])
+                                                     data['components']['schemas'],
+                                                     set(), True)
                                 print('uri: {}, method: {}, stCode: {}, respone REsult END'.format(
                                     key, apiMN, statusCode))
 
